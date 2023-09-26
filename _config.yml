@@ -1,26 +1,25 @@
-baseurl: "/dizer-jekyll" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://demo.themefisher.com" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
-title: "Dizer -  Multipurpose Business & Corporate Jekyll Template"
-email: "themefisher@gmail.com"
-phone: "+21 123 456 5523"
-address: "9567 Turner Trace Apt. 466 North Willie, BC C3G8A4"
-author: themefisher
+title: "Javier Antonio Hernandez De Paz @javiscript portfolio"
+email: "jahernandezdepaz@gmail.com"
+phone: ""
+address: ""
 description: >- # this means to ignore newlines
-  Dizer - Multipurpose Business & Corporate Jekyll Template Jekyll Theme For Mobile Apps Download Landing Page And Blogging.
+  Javier Antonio Hernandez De Paz @javiscript portfolio.
 logo: "/assets/images/logo.png"
 logo_icon: "/assets/images/logo-b.png"
 # contact form action
 contact_form_action: "#" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
 footer_content: "Lorem ipsum dolor amet consectetur adipielit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam."
-copyright: "dizer. &copy; 2020 All Right Reserved"
+copyright: ""
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
 
 ############### Call to Action ###############
 cta:
-  enable: true
+  enable: false
   title: "dizer give the smart solution for your business"
   bg_image: "/assets/images/bg/cta-bg-2.png"
   button:
@@ -35,11 +34,11 @@ social:
 
   - name: twitter
     icon: "ti-twitter-alt"
-    link: "#"
+    link: "https://twitter.com/javiscript13"
 
   - name: linkedin
     icon: "ti-linkedin"
-    link: "#"
+    link: "https://linkedin.com/in/javiscript13"
 
   - name: pinterest
     icon: "ti-pinterest"

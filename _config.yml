@@ -11,8 +11,8 @@ logo_icon: "/assets/images/logo-b.png"
 # contact form action
 contact_form_action: "#" # works with https://fomrspree.io
 mailchimp_list: "https://themeix.us16.list-manage.com/subscribe/post?u=307862c135e4548eecf86f389&amp;id=342411fb35"
-footer_content: "Lorem ipsum dolor amet consectetur adipielit sed eiusm tempor incididunt ut labore dolore magna aliqua enim ad minim veniam."
-copyright: ""
+footer_content: "Web Developer dedicated to leveraging technology for social good and human rights. I value the importance of problem-solving, critical thinking, communication, and teamwork skills in the collaborative world of web development."
+copyright: "2023 @javiscript13"
 # page header default image
 cover_image: "/assets/images/bg/about-bg.jpg"
 google_map_api: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDnh74UN6BKgq9U5fMNGhdZOSpmM_QnZqs"
@@ -28,21 +28,17 @@ cta:
 
 ################## Social site ###############
 social:
-  - name: facebook
-    icon: "ti-facebook"
-    link: "#"
+  - name: linkedin
+    icon: "ti-linkedin"
+    link: "https://linkedin.com/in/javiscript13"
 
   - name: twitter
     icon: "ti-twitter-alt"
     link: "https://twitter.com/javiscript13"
 
-  - name: linkedin
-    icon: "ti-linkedin"
-    link: "https://linkedin.com/in/javiscript13"
-
-  - name: pinterest
-    icon: "ti-pinterest"
-    link: "#"
+  - name: github
+    icon: "ti-github"
+    link: "https://github.com/javiscript13"
 
 # Build settings
 permalink: "/:title"

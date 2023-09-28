@@ -23,29 +23,6 @@
   </nav>
   <!-- Navigation End -->
 
-  <nav class="navbar navbar-vertical fixed-left navbar-expand-lg navbar-light" id="sidebar">
-    <div class="container">
-
-      <!-- Toggler -->
-      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidebarCollapse"
-        aria-controls="sidebarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collapse -->
-      <div class="navbar-collapse collapse" id="sidebarCollapse">
-        {% include navigation_2.html %}
-        <ul class="list-inline menu-socials-links fixed-bottom">
-          {% for social in site.social %}
-          <li class="list-inline-item mb-2">
-            <a href="{{ social.link }}" class="active"><i class="{{social.icon}}"></i></a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div> <!-- / .container -->
-  </nav>
-
   <div class="main-content">
     <div class="container">
       <section class="section portfolio-2">

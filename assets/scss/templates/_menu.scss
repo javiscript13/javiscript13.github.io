@@ -25,7 +25,7 @@
   font-family: $heading-font;
 }
 
-.nav-top {
+nav.fixed-top {
   background: $secondary-color;
   transition: .0s all ease;
   z-index: 99999;
@@ -116,11 +116,11 @@
   display: block;
 }
 
-#main-nav.main-nav-black.nav-top .w-logo {
+#main-nav.main-nav-black.fixed-top .w-logo {
   display: block;
 }
 
-#main-nav.main-nav-black.nav-top .b-logo {
+#main-nav.main-nav-black.fixed-top .b-logo {
   display: none;
 }
 
@@ -267,7 +267,7 @@
   }
 }
 
-.main-nav.main-nav-black.hide-nav.nav-top .navbar-toggler {
+.main-nav.main-nav-black.hide-nav.fixed-top .navbar-toggler {
   span {
     color: $white;
   }
@@ -283,7 +283,7 @@
   }
 }
 
-.main-nav.main-nav-black .nav-top .navbar-toggler {
+.main-nav.main-nav-black .fixed-top .navbar-toggler {
   span {
     color: $white;
   }
@@ -313,7 +313,7 @@
   color: $black !important;
 }
 
-#main-nav.main-nav-black.nav-top .navbar-nav .nav-link {
+#main-nav.main-nav-black.fixed-top .navbar-nav .nav-link {
   color: $white !important;
 }
 

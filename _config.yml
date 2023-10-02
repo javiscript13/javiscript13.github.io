@@ -1,11 +1,11 @@
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://javiscript13.github.io" # the base hostname & protocol for your site, e.g. http://example.com or  https://Dizerjk.netlify.com
-title: "Javier Antonio Hernandez De Paz @javiscript portfolio"
+title: "Javier Antonio Hernandez De Paz @javiscript13 portfolio"
 email: "jahernandezdepaz@gmail.com"
 phone: ""
 address: ""
 description: >- # this means to ignore newlines
-  Javier Antonio Hernandez De Paz @javiscript portfolio.
+  Javier Antonio Hernandez De Paz @javiscript13 portfolio.
 logo: "/assets/images/logo.png"
 logo_icon: "/assets/images/logo-b.png"
 # contact form action

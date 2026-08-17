@@ -4,7 +4,7 @@ services:
         image: jekyll/jekyll:latest
         environment: 
             - JEKYLL_ENV=development
-        command: jekyll serve --force_polling --drafts
+        command: jekyll serve --force_polling --drafts --host 0.0.0.0
         ports:
             - 4000:4000
         volumes:

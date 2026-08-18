@@ -1,4 +1,5 @@
-{% for portfolio in site.portfolios %}
+{% assign sorted_portfolios = site.portfolios | sort: 'order' %}
+{% for portfolio in sorted_portfolios %}
 <div class="col-lg-4 col-6 mb-4 shuffle-item" data-groups="[{% for group in portfolio.filter_group %} &quot;{{ group | downcase | slugify }}&quot; {% unless forloop.last %}, {% endunless %} {% endfor %}]">
   <div class="position-relative inner-box">
     <div class="image position-relative ">

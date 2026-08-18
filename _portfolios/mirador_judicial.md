@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Mirador Judicial (Judicial Observatory)"
+order: 8
 categories: ["D3.js"]
 filter_group: ["Data & Visualization"]
 thumbnail: "/assets/images/portfolio/miradorJudicial1.png"

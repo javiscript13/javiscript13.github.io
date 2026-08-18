@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Infotepequez"
+order: 7
 categories: ["Customization and Installation", "Rails Templating"]
 filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/infotepequez.png"

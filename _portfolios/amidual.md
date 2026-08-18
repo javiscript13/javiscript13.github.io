@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Amidual"
+order: 9
 categories: ["Customization and Installation"]
 filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/amidual.png"

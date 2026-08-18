@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "IoT Device Water Quality Station"
+order: 5
 categories: ["ESP32", "C++"]
 filter_group: ["Connected Systems"]
 thumbnail: "/assets/images/portfolio/lagosabiertosdispositivo.jpg"

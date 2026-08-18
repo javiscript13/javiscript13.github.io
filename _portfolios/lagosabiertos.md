@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Lagos Abiertos"
+order: 3
 categories: ["React", "Django"]
 filter_group: ["Web Apps", "Data & Visualization", "Connected Systems"]
 thumbnail: "/assets/images/portfolio/lagosabiertos.jpg"

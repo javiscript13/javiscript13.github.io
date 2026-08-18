@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "LiteFarm"
+order: 1
 categories: ["React", "Express.js", "Open Source"]
 filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/lf1.png"

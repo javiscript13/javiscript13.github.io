@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Government Investigation Software"
+order: 2
 categories: ["react", "express.js"]
 filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/criminalInv.png"

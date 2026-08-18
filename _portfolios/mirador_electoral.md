@@ -1,6 +1,7 @@
 ---
 layout: portfolio
 title: "Mirador Electoral (Electoral Observatory)"
+order: 6
 categories: ["D3.js", "Jekyll"]
 filter_group: ["Web Apps", "Data & Visualization"]
 thumbnail: "/assets/images/portfolio/miradorElec1.png"

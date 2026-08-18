@@ -8,7 +8,10 @@ description: "<p>LiteFarm is a free and open-source farm management platform bui
 <p>I contribute to the project as a full-stack developer, working on both backend and frontend features, fixing bugs, and participating in the team's Scrum ceremonies.</p>"
 ---
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<h3 class="mb-3 mt-2">{{page.title}}</h3>
+	<div class="category-pills mb-4">
+		{% for category in page.categories %}<span class="badge">{{ category }}</span>{% endfor %}
+	</div>
 	{{page.description}}
 
 <hr class="my-5">

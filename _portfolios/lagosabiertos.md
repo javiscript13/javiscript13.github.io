@@ -9,7 +9,10 @@ description: "<p>Lagos Abiertos (LakesSensor) is a citizen science platform for 
 <p>The project was developed as part of a CONCYT-funded initiative.</p>"
 ---
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<h3 class="mb-3 mt-2">{{page.title}}</h3>
+	<div class="category-pills mb-4">
+		{% for category in page.categories %}<span class="badge">{{ category }}</span>{% endfor %}
+	</div>
 	{{page.description}}
 
 <hr class="my-5">

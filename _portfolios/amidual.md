@@ -8,7 +8,10 @@ description: "<p>Amidual is an online learning platform created by Radio Sónica
 <p>The platform was designed to provide training in Media and Information Literacy (MIL). My work focused on customizing and deploying the platform to meet the project's needs.</p>"
 ---
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<h3 class="mb-3 mt-2">{{page.title}}</h3>
+	<div class="category-pills mb-4">
+		{% for category in page.categories %}<span class="badge">{{ category }}</span>{% endfor %}
+	</div>
 	{{page.description}}
 
 <hr class="my-5">

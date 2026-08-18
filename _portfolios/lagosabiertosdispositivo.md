@@ -10,7 +10,10 @@ description: "<p>I contributed most of the firmware for the current version of t
 <p>The PCB design and physical construction were developed by other members of the team.</p>"
 ---
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<h3 class="mb-3 mt-2">{{page.title}}</h3>
+	<div class="category-pills mb-4">
+		{% for category in page.categories %}<span class="badge">{{ category }}</span>{% endfor %}
+	</div>
 	{{page.description}}
 
 <hr class="my-5">

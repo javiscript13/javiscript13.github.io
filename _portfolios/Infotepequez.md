@@ -8,7 +8,10 @@ description: "<p>Infotepequez was a platform for keeping track of requests for p
 <p>The project was based on Alaveteli, an open-source platform for freedom of information requests. I customized the platform using Ruby on Rails templates while working at Guatecambia.</p>"
 ---
 <div class="col-lg-8 text-center">
-	<h3 class="mb-5 mt-2">{{page.title}}</h3>
+	<h3 class="mb-3 mt-2">{{page.title}}</h3>
+	<div class="category-pills mb-4">
+		{% for category in page.categories %}<span class="badge">{{ category }}</span>{% endfor %}
+	</div>
 	{{page.description}}
 
 <hr class="my-5">

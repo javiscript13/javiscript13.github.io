@@ -24,7 +24,7 @@ description: "<p>Lagos Abiertos (LakesSensor) is a citizen science platform for 
 		<p><a href="https://www.lagosabiertos.org" target="_blank">lagosabiertos.org</a></p>
 	</div>
 	<div class="col-lg-6 text-center">
-		<p class="text-color font-weight-bold mb-2">Available on github</p>
+		<p class="text-color font-weight-bold mb-2">Available on github <i class="ti-github" style="vertical-align:middle;"></i></p>
 		<p><a href="https://github.com/javiscript13/lakessensor" target="_blank">at Github</a></p>
 	</div>
 </div>

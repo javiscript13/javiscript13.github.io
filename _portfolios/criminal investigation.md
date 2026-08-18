@@ -23,7 +23,7 @@ description: "<p>I worked as a full-stack developer on a team that built a web a
 		<p>No, it is private for the orgnization.</p>
 	</div>
 	<div class="col-lg-6 text-center">
-		<p class="text-color font-weight-bold mb-2">Available on github</p>
+		<p class="text-color font-weight-bold mb-2">Available on github <i class="ti-github" style="vertical-align:middle;"></i></p>
 		<p>Not FOSS</p>
 	</div>
 </div>

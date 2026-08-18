@@ -23,7 +23,7 @@ description: "<p>Amidual is an online learning platform created by Radio Sónica
 		<p><a href="https://amidual.sonica.gt/">Online</a>, but not used any more</p>
 	</div>
 	<div class="col-lg-6 text-center">
-		<p class="text-color font-weight-bold mb-2">Available on github</p>
+		<p class="text-color font-weight-bold mb-2">Available on github <i class="ti-github" style="vertical-align:middle;"></i></p>
 		<p>Templating and docker file sources are not public</p>
 	</div>
 </div>

@@ -23,7 +23,7 @@ description: "<p>Infotepequez was a platform for keeping track of requests for p
 		<p>Not online anymore.</p>
 	</div>
 	<div class="col-lg-6 text-center">
-		<p class="text-color font-weight-bold mb-2">Available on github</p>
+		<p class="text-color font-weight-bold mb-2">Available on github <i class="ti-github" style="vertical-align:middle;"></i></p>
 		<p><a href="https://github.com/Guatecambia/publitopia-alaveteli-theme" target="_blank">at Github</a></p>
 	</div>
 </div>

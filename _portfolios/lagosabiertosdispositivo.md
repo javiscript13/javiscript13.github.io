@@ -25,7 +25,7 @@ description: "<p>I contributed most of the firmware for the current version of t
 		<p>Deployed in the field, not a web service.</p>
 	</div>
 	<div class="col-lg-6 text-center">
-		<p class="text-color font-weight-bold mb-2">Available on github</p>
+		<p class="text-color font-weight-bold mb-2">Available on github <i class="ti-github" style="vertical-align:middle;"></i></p>
 		<p><a href="https://github.com/javiscript13/water-Quality-Station" target="_blank">at Github</a></p>
 	</div>
 </div>

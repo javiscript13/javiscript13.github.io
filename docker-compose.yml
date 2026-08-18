@@ -1,10 +1,10 @@
 version: '3'
 services:
     jekyll:
-        image: jekyll/jekyll:latest
-        environment: 
+        image: jekyll/jekyll@sha256:f0ccb9842a530181f73fe2b126a01634810a52ec6667c4b804d9d09432eadf4a
+        environment:
             - JEKYLL_ENV=development
-        command: jekyll serve --force_polling --drafts --host 0.0.0.0
+        command: sh -c "bundle check || bundle install && jekyll serve --force_polling --drafts --host 0.0.0.0"
         ports:
             - 4000:4000
         volumes:

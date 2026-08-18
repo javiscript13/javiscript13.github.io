@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Mirador Electoral (Electoral Observatory)"
 categories: ["D3.js", "Jekyll"]
+filter_group: ["Web Apps", "Data & Visualization"]
 thumbnail: "/assets/images/portfolio/miradorElec1.png"
 short_description: "An interactive data visualization platform for exploring information about Guatemala's 2019 elections."
 description: "<p>Mirador Electoral was an interactive platform created to present and explore information from the Electoral Observatory during Guatemala's 2019 elections.</p>

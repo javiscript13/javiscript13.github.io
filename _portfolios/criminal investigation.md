@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Government Investigation Software"
 categories: ["react", "express.js"]
+filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/criminalInv.png"
 short_description: "A web application built to support and manage criminal investigation processes for Guatemala's Public Ministry."
 description: "<p>I worked as a full-stack developer on a team that built a web application for criminal investigation for Guatemala's Public Ministry.</p>

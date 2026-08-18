@@ -2,6 +2,7 @@
 layout: portfolio
 title: "LiteFarm"
 categories: ["React", "Express.js"]
+filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/lf1.png"
 short_description: "An open-source farm management platform for current and aspiring sustainable farmers."
 description: "<p>LiteFarm is a free and open-source farm management platform built for current and aspiring sustainable farmers.</p>

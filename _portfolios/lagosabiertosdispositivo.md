@@ -2,6 +2,7 @@
 layout: portfolio
 title: "IoT Device Water Quality Station"
 categories: ["ESP32", "C++"]
+filter_group: ["Connected Systems"]
 thumbnail: "/assets/images/portfolio/lagosabiertosdispositivo.jpg"
 short_description: "ESP32-based field station for collecting and transmitting water and environmental data."
 description: "<p>I contributed most of the firmware for the current version of the Water Quality Station used by the Lagos Abiertos citizen science project.</p>

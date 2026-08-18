@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Infotepequez"
 categories: ["Customization and Installation", "Rails Templating"]
+filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/infotepequez.png"
 short_description: "A platform for managing requests for public information from municipalities in Guatemala."
 description: "<p>Infotepequez was a platform for keeping track of requests for public information made to municipalities in Guatemala.</p>

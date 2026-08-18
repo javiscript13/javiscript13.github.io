@@ -35,12 +35,12 @@ layout: default
             <div class="col-12">
               <div class="btn-group btn-group-toggle " data-toggle="buttons">
                 <label class="btn border-0 active">
-                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All Projects
+                  <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
                 </label>
-                {% assign categories = site.portfolios| map: 'categories' | join: ',' | split: ',' | uniq %}
-                {% for category in categories %}
+                {% assign filter_groups = "Web Apps,Data & Visualization,Connected Systems" | split: "," %}
+                {% for group in filter_groups %}
                 <label class="btn border-0">
-                  <input type="radio" name="shuffle-filter" value="{{ category | downcase | slugify }}" />{{ category }}
+                  <input type="radio" name="shuffle-filter" value="{{ group | downcase | slugify }}" />{{ group }}
                 </label>
                 {% endfor %}
               </div>

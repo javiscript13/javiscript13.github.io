@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Mirador Judicial (Judicial Observatory)"
 categories: ["D3.js"]
+filter_group: ["Data & Visualization"]
 thumbnail: "/assets/images/portfolio/miradorJudicial1.png"
 short_description: "Interactive data visualizations exploring Guatemala's justice system."
 description: "<p>Mirador Judicial presents data visualizations developed for an investigation into Guatemala's justice system.</p>

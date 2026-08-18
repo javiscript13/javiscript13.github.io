@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Lagos Abiertos"
 categories: ["React", "Django"]
+filter_group: ["Web Apps", "Data & Visualization", "Connected Systems"]
 thumbnail: "/assets/images/portfolio/lagosabiertos.jpg"
 short_description: "A citizen science platform that uses IoT stations to monitor water quality in Guatemalan lakes."
 description: "<p>Lagos Abiertos (LakesSensor) is a citizen science platform for monitoring water quality in Guatemalan lakes.</p>

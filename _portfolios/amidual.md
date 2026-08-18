@@ -2,6 +2,7 @@
 layout: portfolio
 title: "Amidual"
 categories: ["Customization and Installation"]
+filter_group: ["Web Apps"]
 thumbnail: "/assets/images/portfolio/amidual.png"
 short_description: "An online learning platform for journalists and communicators across Latin America."
 description: "<p>Amidual is an online learning platform created by Radio Sónica in collaboration with DW Akademie for journalists and communicators across Latin America.</p>

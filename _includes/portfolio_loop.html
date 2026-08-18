@@ -7,7 +7,10 @@
         <div class="overlay-inner">
           <a class="overlay-content text-center" href="{{portfolio.url | relative_url }}">
             <h5 class="mb-0 text-white">{{portfolio.title}}</h5>
-            <p>{% for category in portfolio.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
+            {% if portfolio.short_description %}
+            <p class="text-white text-sm mt-2 mb-0">{{portfolio.short_description}}</p>
+            {% endif %}
+            <p class="mt-2 mb-0">{% for category in portfolio.categories %} {{category}}{% unless forloop.last %} , {% endunless %} {% endfor %}</p>
           </a>
         </div>
       </div>

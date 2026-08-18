@@ -3,11 +3,15 @@ layout: portfolio
 title: "IoT Device Water Quality Station"
 categories: ["ESP32", "C++"]
 thumbnail: "/assets/images/portfolio/lagosabiertosdispositivo.jpg"
-description: "I contributed most of the firmware in the current version of the Water Quality Station, the ESP32-based field device for the Lagos Abiertos / LakesSensor citizen science project (SinerCyT/CONCYT). It reads ambient temperature and humidity (AHT10), water temperature (DS18B20), pH (calibrated analog probe) and GPS location, shows live readings on a SH1106 OLED display, and publishes them over MQTT so they reach the Django backend. Provisioning uses WiFiManager for on-site WiFi configuration, and readings are queued to LittleFS and resent automatically when connectivity or MQTT delivery is temporarily lost. My work was on the C++/Arduino firmware; the PCB design and physical build were done by other members of the team."
+short_description: "ESP32-based field station for collecting and transmitting water and environmental data."
+description: "<p>I contributed most of the firmware for the current version of the Water Quality Station used by the Lagos Abiertos citizen science project.</p>
+<p>The ESP32-based field device measures ambient temperature and humidity, water temperature, pH, and GPS location. It displays readings locally and transmits them over MQTT to the project's backend.</p>
+<p>I worked on the C++/Arduino firmware, including Wi-Fi provisioning and offline data handling using LittleFS, allowing readings to be queued and resent when connectivity is temporarily unavailable.</p>
+<p>The PCB design and physical construction were developed by other members of the team.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

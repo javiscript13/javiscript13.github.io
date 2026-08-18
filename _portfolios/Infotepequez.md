@@ -3,11 +3,13 @@ layout: portfolio
 title: "Infotepequez"
 categories: ["Customization and Installation", "Rails Templating"]
 thumbnail: "/assets/images/portfolio/infotepequez.png"
-description: "This project aimed to keep a record and manage available requests for public information to municipalities in Guatemala. It was based on Alaveteli software and customized using Rails templating. This initiative was undertaken during my work at Guatecambia."
+short_description: "A platform for managing requests for public information from municipalities in Guatemala."
+description: "<p>Infotepequez was a platform for keeping track of requests for public information made to municipalities in Guatemala.</p>
+<p>The project was based on Alaveteli, an open-source platform for freedom of information requests. I customized the platform using Ruby on Rails templates while working at Guatecambia.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

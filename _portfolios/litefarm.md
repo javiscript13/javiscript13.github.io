@@ -3,11 +3,13 @@ layout: portfolio
 title: "LiteFarm"
 categories: ["React", "Express.js"]
 thumbnail: "/assets/images/portfolio/lf1.png"
-description: "A free and open source farm management tool built for current and aspiring sustainable farmers. I have contributed to this project fixing bugs and adding new functionalities (both backend and frontend), I often attend to SCRUM ceremonies with the team."
+short_description: "An open-source farm management platform for current and aspiring sustainable farmers."
+description: "<p>LiteFarm is a free and open-source farm management platform built for current and aspiring sustainable farmers.</p>
+<p>I contribute to the project as a full-stack developer, working on both backend and frontend features, fixing bugs, and participating in the team's Scrum ceremonies.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

@@ -3,11 +3,13 @@ layout: portfolio
 title: "Amidual"
 categories: ["Customization and Installation"]
 thumbnail: "/assets/images/portfolio/amidual.png"
-description: "This project was launched by Radio Sónica in collaboration with DW Akademie as an online academy for journalists and communicators from Latin America, aiming to instruct them on Media and Information Literacy (MIL)."
+short_description: "An online learning platform for journalists and communicators across Latin America."
+description: "<p>Amidual is an online learning platform created by Radio Sónica in collaboration with DW Akademie for journalists and communicators across Latin America.</p>
+<p>The platform was designed to provide training in Media and Information Literacy (MIL). My work focused on customizing and deploying the platform to meet the project's needs.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

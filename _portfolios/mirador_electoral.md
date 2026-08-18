@@ -3,11 +3,13 @@ layout: portfolio
 title: "Mirador Electoral (Electoral Observatory)"
 categories: ["D3.js", "Jekyll"]
 thumbnail: "/assets/images/portfolio/miradorElec1.png"
-description: "This project aimed to visualize and maintain general information about the Electoral Observatory for the Guatemalan elections in 2019. It was undertaken during my work at Guatecambia in collaboration with the Instituto Republicano Internacional (IRI)."
+short_description: "An interactive data visualization platform for exploring information about Guatemala's 2019 elections."
+description: "<p>Mirador Electoral was an interactive platform created to present and explore information from the Electoral Observatory during Guatemala's 2019 elections.</p>
+<p>I developed the data visualizations while working at Guatecambia in collaboration with the International Republican Institute (IRI), using D3.js and Jekyll.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

@@ -3,11 +3,14 @@ layout: portfolio
 title: "Lagos Abiertos"
 categories: ["React", "Django"]
 thumbnail: "/assets/images/portfolio/lagosabiertos.jpg"
-description: "I built the software behind Lagos Abiertos (LakesSensor): a Django REST backend and React frontend for a citizen science platform that monitors water quality in Guatemalan lakes, developed for a CONCYT-funded project. IoT stations deployed on the lakes send water and air readings over MQTT, the backend stores them in PostgreSQL, and the frontend exposes them so researchers and citizens can track lake health over time."
+short_description: "A citizen science platform that uses IoT stations to monitor water quality in Guatemalan lakes."
+description: "<p>Lagos Abiertos (LakesSensor) is a citizen science platform for monitoring water quality in Guatemalan lakes.</p>
+<p>I built the software behind the platform, including a Django REST backend and React frontend. IoT stations deployed on the lakes collect water and air measurements and send them to the backend over MQTT, where the data is stored and made available for researchers and citizens to explore water quality over time.</p>
+<p>The project was developed as part of a CONCYT-funded initiative.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

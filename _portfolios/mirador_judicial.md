@@ -3,11 +3,13 @@ layout: portfolio
 title: "Mirador Judicial (Judicial Observatory)"
 categories: ["D3.js"]
 thumbnail: "/assets/images/portfolio/miradorJudicial1.png"
-description: "My role in this project was to create visualizations for an investigation about the administration of justice system. The investigation was conducted by the 'Instituto de Estudios Comparados en Ciencias Penales de Guatemala (ICCPG)', and the visualizations were developed using D3.js."
+short_description: "Interactive data visualizations exploring Guatemala's justice system."
+description: "<p>Mirador Judicial presents data visualizations developed for an investigation into Guatemala's justice system.</p>
+<p>My role was to transform the research findings into interactive visualizations using D3.js. The research was conducted by the Instituto de Estudios Comparados en Ciencias Penales de Guatemala (ICCPG).</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

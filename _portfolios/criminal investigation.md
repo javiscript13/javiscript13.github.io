@@ -3,11 +3,13 @@ layout: portfolio
 title: "Government Investigation Software"
 categories: ["react", "express.js"]
 thumbnail: "/assets/images/portfolio/criminalInv.png"
-description: "Full stack developer (SERN stack), as part of a team that built a web app for criminal investigation for the Guatemala Government Public Ministry. The project was sponsored by JES and the project was built from the ground hand on hand with the Public Ministry to replace the one that they had at the moment."
+short_description: "A web application built to support and manage criminal investigation processes for Guatemala's Public Ministry."
+description: "<p>I worked as a full-stack developer on a team that built a web application for criminal investigation for Guatemala's Public Ministry.</p>
+<p>The project was sponsored by JES and developed in close collaboration with the Public Ministry to replace the organization's existing system. I worked across the application using the SERN stack: React, Express.js, and related technologies.</p>"
 ---
 <div class="col-lg-8 text-center">
 	<h3 class="mb-5 mt-2">{{page.title}}</h3>
-	<p>{{page.description}}</p>
+	{{page.description}}
 
 <hr class="my-5">
 	

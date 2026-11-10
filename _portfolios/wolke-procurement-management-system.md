@@ -31,5 +31,5 @@ es:
   short_description: "Sistema de gestión de compras para solicitudes y aprobaciones, desarrollado a partir de los procesos reales de compras de un cliente."
   description: |-
     <p>El sistema de gestión de compras fue un proyecto de software desarrollado en Wolke Solutions para gestionar solicitudes de compra y aprobaciones, basado en los procesos reales de compras de un cliente. El sistema manejaba solicitudes y aprobaciones con reglas configurables por departamento, aprobador, monto y categoría.</p>
-    <p>Como gerente de proyecto, sostuve las reuniones con el cliente, levanté los requerimientos, traduje su proceso de compras a necesidades de software, coordiné a dos desarrolladores, definí prioridades y di seguimiento a las entregas, incluidos el despliegue a producción y la validación. No definí la arquitectura ni la tecnología.</p>
+    <p>Como gerente de proyecto, sostuve las reuniones con el cliente, levanté los requerimientos, levanté los requerimientos y los convertí en especificaciones funcionales para el desarrollo del sistema, coordiné a dos desarrolladores, definí prioridades y di seguimiento a las entregas, incluidos el despliegue a producción y la validación. No definí la arquitectura ni la tecnología.</p>
 ---

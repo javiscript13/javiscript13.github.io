@@ -24,7 +24,7 @@ parent_id: EXP-10
 es:
   title: "Bufete502: recuperación de Google Workspace"
   role: "Implementador"
-  short_description: "Recuperación de una configuración de Google Workspace y restablecimiento del dominio y los usuarios."
+  short_description: "Recuperación de una configuración de Google Workspace y recuperación de la configuración del dominio y las cuentas de usuario."
   description: |-
     <p>Revisé y corregí una configuración de Google Workspace que, tras intentos previos de configuración, había quedado inutilizable. El trabajo incluyó revalidar el dominio y crear las cuentas de usuario para que la organización pudiera usar su servicio de correo.</p>
 ---

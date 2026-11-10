@@ -14,7 +14,7 @@
     padding-left: 26px;
     font-weight: 600;
     line-height: 40px;
-    font-family: $body-font;
+    font-family: $nav-font;
   }
 
   .navbar-nav.extra-nav .nav-link {
@@ -24,10 +24,10 @@
 }
 
 .navbar-brand {
-  font-size: 24px;
+  font-size: 40px;
   color: $white;
-  font-weight: 700;
-  font-family: $heading-font;
+  font-weight: 500;
+  font-family: $nav-font;
 }
 
 nav.fixed-top {

@@ -23,7 +23,7 @@ parent_type: experience
 parent_id: EXP-03
 # Spanish version (page /es/portfolios/tzutujil-language-learning-game). Fields left out stay as in English.
 es:
-  title: "Juego para aprender el idioma tz'utujil"
+  title: "Juego para aprender el idioma Tz'utujil"
   role: "Implementador"
   short_description: "Juego tipo karaoke para aprender el idioma tz'utujil."
   description: |-

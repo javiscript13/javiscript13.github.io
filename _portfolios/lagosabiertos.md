@@ -63,7 +63,7 @@ components:   # each component has its own `es:` block (Spanish title, card text
       description: |-
         <p>Aporté la mayor parte del firmware de la versión actual de la estación de calidad del agua que usa el proyecto Lagos Abiertos.</p>
         <p>El dispositivo, basado en ESP32, mide temperatura y humedad ambiente, temperatura del agua, pH y ubicación GPS. Muestra las lecturas localmente y las transmite por MQTT al backend del proyecto.</p>
-        <p>Mi trabajo se centró en el firmware en C++/Arduino, incluido el aprovisionamiento de Wi-Fi y el manejo de datos sin conexión con LittleFS. Esto permite guardar las mediciones en una cola local y transmitirlas de nuevo cuando vuelve la conectividad.</p>
+        <p>Mi trabajo se centró en el firmware en C++/Arduino, incluido el aprovisionamiento de Wi-Fi y el manejo de datos sin conexión con LittleFS. Esto permite almacenar temporalmente las mediciones y transmitirlas cuando se restablece la conexión.</p>
         <p>El diseño del PCB y la construcción física estuvieron a cargo de otros miembros del equipo.</p>
 availability: online   # online | offline | private | device
 parent_type: experience

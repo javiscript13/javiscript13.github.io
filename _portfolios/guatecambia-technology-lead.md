@@ -25,12 +25,12 @@ parent_type: experience
 parent_id: EXP-05
 # Spanish version (page /es/portfolios/guatecambia-technology-lead). Fields left out stay as in English.
 es:
-  title: "Guatecambia: encargado de tecnología"
+  title: "Guatecambia: responsable de tecnología y programación"
   tags: ["Desarrollo web", "Software libre", "Tecnología cívica"]
-  role: "Encargado de tecnología / programación"
+  role: "Responsable de tecnología y programación"
   short_description: "Trabajo transversal de tecnología en una organización cívica: desarrollo de software, plataformas digitales, gobierno abierto, datos y fortalecimiento de capacidades."
   description: |-
     <p>En Guatecambia fui responsable de la tecnología y del desarrollo de software de la organización, y contribuí en diversas iniciativas de tecnología cívica y gobierno abierto.</p>
     <p>Mi trabajo incluyó desarrollar aplicaciones web, recuperar y personalizar sitios existentes, adaptar plataformas de código abierto, implementar herramientas digitales y acompañar a organizaciones con capacitación práctica en tecnología. También contribuí en proyectos de información pública, transparencia gubernamental y participación ciudadana.</p>
-    <p>Más que trabajar en un solo producto, me moví entre distintas iniciativas según las necesidades de cada proyecto. Varios de esos proyectos se presentan por separado en este portafolio.</p>
+    <p>Mi trabajo abarcó distintas iniciativas y asumí responsabilidades según las necesidades de cada proyecto. Varios de esos proyectos se presentan por separado en este portafolio.</p>
 ---

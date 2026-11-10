@@ -31,6 +31,6 @@ es:
   role: "Visualización de datos"
   short_description: "Plataforma interactiva de visualización de datos para explorar información sobre las elecciones de 2019 en Guatemala."
   description: |-
-    <p>Mirador Electoral fue una plataforma interactiva creada para presentar y explorar la información de la observación electoral durante las elecciones de 2019 en Guatemala.</p>
+    <p>Mirador Electoral fue una plataforma interactiva creada para presentar y explorar la datos del Observatorio Electoral durante las elecciones de 2019 en Guatemala.</p>
     <p>Desarrollé las visualizaciones de datos mientras trabajaba en Guatecambia, en colaboración con el Instituto Republicano Internacional (IRI), usando D3.js y Jekyll.</p>
 ---

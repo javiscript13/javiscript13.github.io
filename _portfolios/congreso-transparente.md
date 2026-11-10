@@ -26,5 +26,5 @@ es:
   role: "Mantenimiento; desarrollo web"
   short_description: "Recuperación y reinstalación de un sitio web de transparencia abandonado, seguidas de mantenimiento y modificaciones posteriores."
   description: |-
-    <p>Recuperé y reinstalé el sitio abandonado de Congreso Transparente mientras trabajaba en Guatecambia; restauré el sitio y le hice las modificaciones posteriores que se necesitaron.</p>
+    <p>Recuperé y reinstalé el sitio web abandonado de Congreso Transparente mientras trabajaba en Guatecambia, lo puse nuevamente en funcionamiento y realicé modificaciones posteriores según las necesidades.</p>
 ---

@@ -28,10 +28,10 @@ parent_id: EXP-06
 es:
   tags: ["Personalización e instalación", "Plataformas de aprendizaje"]
   role: "Implementador"
-  short_description: "Personalización y despliegue de una plataforma de aprendizaje Chamilo para una iniciativa de formación en alfabetización mediática e informacional."
+  short_description: "Personalización e implementación de la plataforma de gestión del aprendizaje Chamilo para una iniciativa de formación en alfabetización mediática e informacional."
   description: |-
     <p>Amidual fue una iniciativa de aprendizaje en línea de Radio Sónica, desarrollada en colaboración con DW Akademie para periodistas y comunicadores de América Latina.</p>
-    <p>Personalicé y desplegué el sistema de gestión de aprendizaje Chamilo para apoyar las actividades de formación del proyecto y responder a sus necesidades operativas.</p>
+    <p>Personalicé e implementé la plataforma de gestión del aprendizaje Chamilo para apoyar las actividades de formación del proyecto y responder a sus necesidades operativas.</p>
   availability_note: "La plataforma ya no está en uso."
   repository_note: "Las fuentes de las plantillas y del archivo Docker no son públicas."
 ---

@@ -39,7 +39,7 @@ The site is in English and Spanish. English is the default and keeps the origina
 
 **Adding a page**: create it for English and again under `es/` with `lang: es` and a permalink that is the English one prefixed with `/es` (the switcher and `hreflang` rely on that rule).
 
-The Spanish texts are a translation of the English copy and are pending the author's review.
+Spanish copy is maintained in the `es:` fields and reviewed for accuracy and natural wording.
 
 ## Content model
 
@@ -67,7 +67,7 @@ The category buttons filter the Work grid (Shuffle, as in the original site). Gi
 Check links before publishing them (an offline site must not be marked `online`).
 
 ### Experiences and collaborations (`_data/experiences.yml`, `_data/collaborations.yml`)
-Shown on About; a project links to one with `parent_type: experience|collaboration` and `parent_id: <id>`. Only records approved for publication go in these files (the repository is public). Texts are a translation pending the author's review.
+Shown on About; a project links to one with `parent_type: experience|collaboration` and `parent_id: <id>`. Only records approved for publication go in these files (the repository is public). Spanish descriptions are reviewed for accuracy and natural wording.
 
 ### Other data
 - `_data/categories.yml`: the four project categories (name, description) used by the Work filters and cards.

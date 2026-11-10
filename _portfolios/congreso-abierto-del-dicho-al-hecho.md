@@ -28,5 +28,5 @@ es:
   role: "Adaptación de software libre"
   short_description: "Adaptación de una plataforma de código abierto que sirvió de base para la iniciativa Del Dicho al Hecho / Congreso Abierto."
   description: |-
-    <p>Adapté una plataforma de código abierto existente para la iniciativa Del Dicho al Hecho en Guatecambia. Ese trabajo formó parte del esfuerzo que después evolucionó en Congreso Abierto.</p>
+    <p>Adapté una plataforma de código abierto existente para la iniciativa Del Dicho al Hecho en Guatecambia. Ese trabajo formó parte de la iniciativa que posteriormente evolucionó hasta convertirse en Congreso Abierto.</p>
 ---

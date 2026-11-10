@@ -24,10 +24,10 @@ parent_type:
 parent_id: 
 # Spanish version (page /es/portfolios/asobiensa-business-management-system). Fields left out stay as in English.
 es:
-  title: "Asobiensa: sistema de gestión de negocio"
+  title: "Asobiensa: sistema de gestión empresarial"
   role: "Desarrollo"
-  short_description: "Aplicación de gestión para una distribuidora farmacéutica: inventario, pedidos y facturación."
+  short_description: "Aplicación de gestión para una distribuidora farmacéutica, con módulos de inventario, pedidos y facturación."
   description: |-
-    <p>Aplicación en Microsoft Access construida desde cero para una distribuidora farmacéutica: inventario, pedidos, facturación (sin proveedores), formularios y reportes.</p>
+    <p>Aplicación de gestión empresarial desarrollada desde cero en Microsoft Access para una distribuidora farmacéutica, con módulos de inventario, pedidos y facturación, además de formularios y reportes.</p>
     <p>Llegó a tener dos usuarios simultáneos. Se usó aproximadamente de 2007 a 2023.</p>
 ---

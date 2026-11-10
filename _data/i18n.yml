@@ -82,10 +82,10 @@ es:
   language: "Idioma"
   # Home
   hero_title: 'Ayudo a las organizaciones a <span class="text-color">mejorar su forma de trabajar</span> conectando procesos, tecnología y datos.'
-  hero_lead: "Soy Javier Hernandez, <strong>consultor en tecnología y procesos de negocio</strong> radicado en Guatemala. Ayudo a convertir los retos de una organización en mejoras prácticas mediante tecnología y datos."
+  hero_lead: "Soy Javier Hernandez, <strong>consultor en tecnología y procesos de negocio</strong> con sede en Guatemala. Ayudo a convertir los retos de una organización en mejoras prácticas mediante tecnología y datos."
   what_i_do: "Qué hago"
   selected_projects: "Proyectos seleccionados:"
-  work_heading: "Proyectos que ponen a trabajar la tecnología, los datos y las soluciones prácticas"
+  work_heading: "Proyectos donde la tecnología, los datos y las soluciones prácticas generan resultados"
   work_intro: "Proyectos seleccionados, agrupados según el tipo de problema que atienden."
   filter_aria: "Filtrar proyectos por categoría"
   filter_label: "Filtrar por categoría"
@@ -97,15 +97,15 @@ es:
   about_heading: "Sobre mí"
   about_more: "Más sobre mí"
   contact_heading: "Contacto"
-  contact_text: "Si desea conversar sobre un proyecto, una decisión tecnológica o una forma de mejorar cómo trabaja su organización, con gusto le escucho."
+  contact_text: "Si querés conversar sobre un proyecto, una decisión tecnológica o una forma de mejorar cómo trabaja tu organización, será un gusto conversar."
   contact_cta: "Conversemos"
   # About
   about_intro:
     - "Mi trayectoria abarca desarrollo de software, sistemas de negocio, coordinación de proyectos e iniciativas basadas en datos. A lo largo de los años he trabajado con empresas privadas, instituciones públicas y organizaciones sin fines de lucro, asumiendo distintos roles según lo que cada proyecto necesitaba: desde desarrollar software y mejorar procesos operativos hasta coordinar implementaciones y conectar datos de distintas fuentes."
-    - "Esa variedad ha moldeado mi forma de ver la tecnología: no como un fin en sí mismo, sino como un medio para atender necesidades reales de las organizaciones. Para mí es importante entender primero el problema, encontrar un camino práctico y asegurar que la solución funcione en el contexto donde se va a usar."
+    - "Esa diversidad de experiencias ha definido mi forma de abordar la tecnología: no como un fin en sí mismo, sino como un medio para atender necesidades reales de las organizaciones. Para mí es importante entender primero el problema, encontrar un camino práctico y asegurar que la solución funcione en el contexto donde se va a usar."
   how_i_work: "Cómo trabajo"
   how_i_work_text:
-    - "La mayor parte de mi trabajo empieza antes de la tecnología: entender cómo opera realmente una organización, qué necesita y cómo sería una solución práctica. A veces eso significa analizar un proceso, a veces coordinar un equipo y a veces escribir los scripts o el código que integran los datos. Mi experiencia como desarrollador es lo que me permite entender, evaluar e implementar las soluciones que recomiendo."
+    - "La mayor parte de mi trabajo comienza antes de elegir o implementar tecnología: primero entiendo cómo opera realmente una organización, qué necesita y qué solución práctica puede responder a ese contexto. A veces eso significa analizar un proceso, a veces coordinar un equipo y a veces escribir los scripts o el código que integran los datos. Mi experiencia como desarrollador es lo que me permite entender, evaluar e implementar las soluciones que recomiendo."
     - "Me interesan especialmente los problemas donde la tecnología tiene que adaptarse a un proceso complejo del mundo real, y no al revés, y los proyectos que hacen a las organizaciones más eficientes, transparentes o accesibles."
   technical_background: "Conocimientos técnicos"
   professional_experience: "Experiencia profesional"

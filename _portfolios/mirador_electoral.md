@@ -4,6 +4,7 @@ source_id: PRJ-10   # internal ID in the source database; not shown on the site
 title: "Mirador Electoral (Electoral Observatory)"
 order: 6
 category: digital-presence
+also_in: [data-analytics, government-civic]
 tags: ["D3.js", "Jekyll"]
 capabilities: [data-software]   # ids from _data/services.yml; only where documented
 visibility: public   # public | archive | private (archive/private also need published: false)

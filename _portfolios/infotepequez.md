@@ -4,6 +4,7 @@ source_id: PRJ-07   # internal ID in the source database; not shown on the site
 title: "Infotepequez"
 order: 11
 category: government-civic
+also_in: [digital-presence]
 tags: ["Customization and Installation", "Rails Templating"]
 visibility: public   # public | archive | private (archive/private also need published: false)
 featured: 2   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = after them

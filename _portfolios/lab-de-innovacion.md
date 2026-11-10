@@ -4,6 +4,7 @@ source_id: PRJ-08   # internal ID in the source database; not shown on the site
 title: "Lab de Innovación"
 order: 18
 category: government-civic
+also_in: [digital-presence]
 tags: ["Django"]
 visibility: public   # public | archive | private (archive/private also need published: false)
 featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = after them

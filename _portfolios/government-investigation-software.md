@@ -3,6 +3,7 @@ layout: portfolio
 title: "Government Investigation Software"
 order: 5
 category: government-civic
+also_in: [business-systems]
 tags: ["React", "Express.js"]
 capabilities: [data-software]   # ids from _data/services.yml; only where documented
 visibility: public   # public | archive | private (archive/private also need published: false)

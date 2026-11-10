@@ -65,11 +65,12 @@ meta_description: "Technology & Business Process Consultant. I help organization
         <div class="work-filters" role="group" aria-label="Filter projects by category">
           <span class="work-filters-label">Filter by category</span>
           <div class="work-filters-list">
-            <button type="button" class="work-filter is-active" data-filter="all" aria-pressed="true">All <span class="work-filter-count">{{ visible.size }}</span></button>
+            <button type="button" class="work-filter is-active" data-filter="all" aria-pressed="true">All</button>
             {% for category in site.data.categories %}
-              {% assign in_category = visible | where: "category", category.id %}
-              {% if in_category.size > 0 %}
-              <button type="button" class="work-filter" data-filter="{{ category.id }}" data-description="{{ category.description | escape }}" aria-pressed="false">{{ category.name | escape }} <span class="work-filter-count">{{ in_category.size }}</span></button>
+              {% assign category_count = 0 %}
+              {% for project in visible %}{% if project.category == category.id or project.also_in contains category.id %}{% assign category_count = category_count | plus: 1 %}{% endif %}{% endfor %}
+              {% if category_count > 0 %}
+              <button type="button" class="work-filter" data-filter="{{ category.id }}" data-description="{{ category.description | escape }}" aria-pressed="false">{{ category.name | escape }}</button>
               {% endif %}
             {% endfor %}
           </div>

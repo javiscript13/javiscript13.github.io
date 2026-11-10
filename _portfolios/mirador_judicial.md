@@ -4,6 +4,7 @@ source_id: PRJ-11   # internal ID in the source database; not shown on the site
 title: "Mirador Judicial (Judicial Observatory)"
 order: 7
 category: data-analytics
+also_in: [digital-presence, government-civic]
 tags: ["D3.js"]
 capabilities: [data-software]   # ids from _data/services.yml; only where documented
 visibility: public   # public | archive | private (archive/private also need published: false)

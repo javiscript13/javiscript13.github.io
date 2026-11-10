@@ -3,6 +3,7 @@ layout: portfolio
 order: 2
 title: "ExxonMobil: Retail Operations Issue Management"
 category: business-systems
+also_in: [data-analytics]
 tags: ["Process improvement", "Excel", "SAP data"]
 capabilities: [process-analysis]   # ids from _data/services.yml; only where documented
 visibility: public   # public | archive | private (archive/private also need published: false)

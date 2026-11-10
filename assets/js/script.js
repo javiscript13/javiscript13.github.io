@@ -185,7 +185,10 @@
 
     var applyWork = function () {
       var matching = allItems.filter(function (el) {
-        return current === 'all' || (el.getAttribute('data-groups') || '').indexOf(current) !== -1;
+        if (current === 'all') { return true; }
+        var groups = [];
+        try { groups = JSON.parse(el.getAttribute('data-groups') || '[]'); } catch (e) {}
+        return groups.indexOf(current) !== -1;
       });
       var shown = matching.slice(0, limit);
       workShuffle.filter(function (el) { return shown.indexOf(el) !== -1; });

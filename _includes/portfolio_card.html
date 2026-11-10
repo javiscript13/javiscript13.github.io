@@ -9,7 +9,9 @@
 {% endcomment %}
 {% assign project = include.project %}
 {% assign card_category = site.data.categories | where: "id", project.category | first %}
-<div class="{{ include.col_class | default: 'col-12 col-md-6 col-xl-4' }} mb-5{% if include.grid %} shuffle-item{% endif %}"{% if include.grid %} data-groups='["{{ project.category }}"]'{% endif %}>
+{% comment %} Filter groups: the primary `category` plus any `also_in` ids. The card only shows the primary one. {% endcomment %}
+{% assign card_groups = project.category %}{% for extra in project.also_in %}{% assign card_groups = card_groups | append: '","' | append: extra %}{% endfor %}
+<div class="{{ include.col_class | default: 'col-12 col-md-6 col-xl-4' }} mb-5{% if include.grid %} shuffle-item{% endif %}"{% if include.grid %} data-groups='["{{ card_groups }}"]'{% endif %}>
   <a class="project-card inner-box{% if include.grid %} project-card--grid{% endif %}" href="{{ project.url | relative_url }}">
     <div class="project-card-image{% unless project.thumbnail %} is-cover{% endunless %}">
       {% if project.thumbnail %}

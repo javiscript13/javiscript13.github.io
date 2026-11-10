@@ -23,7 +23,7 @@ Two pages plus project pages: **Home** (hero, What I do, **Work**, About preview
 ## Content model
 
 ### Projects (`_portfolios/`, one `.md` per project, front matter only)
-Main fields: `title`, `category` (one of `_data/categories.yml`), `tags`, `visibility`, `order`, `short_description` (plain text, also the meta description), `description` (HTML), `thumbnail`, `images`, `year`, `client`, `role`, `parent_type` + `parent_id` (an experience or collaboration), `source_id` (internal ID, never shown).
+Main fields: `title`, `category` (primary category, one of `_data/categories.yml`; it is the one shown on the card and the project page), `also_in` (optional list of other category ids where the project also appears in the Work filters, e.g. `also_in: [data-analytics]`), `tags`, `visibility`, `order`, `short_description` (plain text, also the meta description), `description` (HTML), `thumbnail`, `images`, `year`, `client`, `role`, `parent_type` + `parent_id` (an experience or collaboration), `source_id` (internal ID, never shown).
 Projects without a `thumbnail` get a graphic cover on cards (`_includes/project_cover.html`): pure geometry in the site palette, one composition per category (the project's `order` varies the pattern), no text, logo or interface, so it can't be mistaken for a screenshot.
 
 **Visibility** (single field):

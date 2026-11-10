@@ -4,6 +4,7 @@ source_id: EXP-09   # internal ID in the source database; not shown on the site
 title: "Ministry of Environment: Technical Advisor to the Vice Ministry of Environment"
 order: 12
 category: data-analytics
+also_in: [business-systems, government-civic]
 tags: ["Python", "CSV", "Excel", "Data integration", "Reports"]
 capabilities: [technology-consulting, data-software]   # ids from _data/services.yml; only where documented
 visibility: public   # public | archive | private (archive/private also need published: false)

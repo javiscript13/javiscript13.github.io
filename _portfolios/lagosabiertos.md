@@ -13,25 +13,42 @@ client:
 role: "Development and data visualization"
 short_description: "A citizen science platform that uses IoT stations to monitor water quality in Guatemalan lakes."
 description: |-
-  <p>Lagos Abiertos (LakesSensor) is a citizen science platform for monitoring water quality in Guatemalan lakes.</p>
-  <p>I built the software behind the platform, including a Django REST backend and React frontend. IoT stations deployed on the lakes collect water and air measurements and send them to the backend over MQTT, where the data is stored and made available for researchers and citizens to explore water quality over time.</p>
+  <p>Lagos Abiertos (LakesSensor) is a citizen science initiative for monitoring water quality in Guatemalan lakes. The project combines a web-based data platform with IoT stations deployed in the field to collect and transmit environmental measurements.</p>
+  <p>The two components work together: the stations collect measurements and transmit them to the platform, where the data is stored and made available for researchers and citizens to explore water quality over time.</p>
   <p>The project was developed as part of a CONCYT-funded initiative.</p>
 thumbnail: "/assets/images/portfolio/lagosabiertos.jpg"
 images: []
 website: "https://www.lagosabiertos.org"
 repository: "https://github.com/javiscript13/lakessensor"
+showcase: true   # this page shows an introduction, one card per component and a detailed section for each (see _layouts/portfolio.html)
 components:
-  - title: "IoT Device Water Quality Station"
-    tags: ["ESP32", "C++"]
-    short_description: "ESP32-based field station for collecting and transmitting water and environmental data."
+  - id: "data-platform"
+    number: "01"
+    title: "Data Platform"
+    card_tags: ["Django REST", "React", "MQTT"]
+    card_text: "A web platform for collecting, storing, and exploring water quality measurements transmitted by the project's IoT stations."
+    card_action: "Explore Data Platform"
+    image: "/assets/images/portfolio/lagosabiertos.jpg"
     description: |-
-      <p>I contributed most of the firmware for the current version of the Water Quality Station used by the Lagos Abiertos citizen science project.</p>
-      <p>The ESP32-based field device measures ambient temperature and humidity, water temperature, pH, and GPS location. It displays readings locally and transmits them over MQTT to the project's backend.</p>
-      <p>I worked on the C++/Arduino firmware, including Wi-Fi provisioning and offline data handling using LittleFS, allowing readings to be queued and resent when connectivity is temporarily unavailable.</p>
-      <p>The PCB design and physical construction were developed by other members of the team.</p>
+      <p>I developed the software behind the Lagos Abiertos platform, including its Django REST backend and React frontend.</p>
+      <p>The backend receives measurements transmitted by the field stations over MQTT, stores the collected data, and makes it available through the platform for researchers and citizens to explore water quality over time.</p>
+    website: "https://www.lagosabiertos.org"
+    repository: "https://github.com/javiscript13/lakessensor"
+    availability: online
+  - id: "iot-water-quality-station"
+    number: "02"
+    title: "IoT Water Quality Station"
+    card_tags: ["ESP32", "C++", "Arduino", "MQTT"]
+    card_text: "An ESP32-based field station that measures water and environmental conditions, displays readings locally, and transmits data to the Lagos Abiertos platform."
+    card_action: "Explore IoT Station"
     image: "/assets/images/portfolio/lagosabiertosdispositivo.jpg"
-    availability: device
+    description: |-
+      <p>I contributed most of the firmware for the current version of the Water Quality Station used by the Lagos Abiertos project.</p>
+      <p>The ESP32-based device measures ambient temperature and humidity, water temperature, pH, and GPS location. It displays readings locally and transmits them over MQTT to the project's backend.</p>
+      <p>My work focused on the C++/Arduino firmware, including Wi-Fi provisioning and offline data handling using LittleFS. This allows measurements to be queued locally and transmitted again when connectivity becomes available.</p>
+      <p>The PCB design and physical construction were developed by other members of the team.</p>
     repository: "https://github.com/javiscript13/water-Quality-Station"
+    availability: device
 availability: online   # online | offline | private | device
 parent_type: experience
 parent_id: EXP-10

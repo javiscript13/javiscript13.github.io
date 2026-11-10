@@ -14,7 +14,7 @@ role: "Implementer"
 short_description: "An open-source farm management platform for current and aspiring sustainable farmers."
 description: |-
   <p>LiteFarm is a free and open-source farm management platform built for current and aspiring sustainable farmers.</p>
-  <p>I contribute to the project as a full-stack developer, working on both backend and frontend features, fixing bugs, and participating in the team's Scrum ceremonies.</p>
+  <p>I contributed to the project as a full-stack developer, working on both backend and frontend features, fixing bugs, and participating in the team's Scrum ceremonies.</p>
 thumbnail: "/assets/images/portfolio/lf1.png"
 images:
   - "/assets/images/portfolio/lf2.png"

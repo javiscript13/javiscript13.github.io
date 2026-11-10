@@ -12,7 +12,7 @@ client: "Advertising client (via TPP eMarketing)"
 role: "Implementer"
 short_description: "Adaptation of an existing Formula 1 game for an advertising client."
 description: |-
-  <p>Adaptation of existing ActionScript 3 code of a Formula 1 game for an advertising client.</p>
+  <p>I adapted existing ActionScript 3 code for a Formula 1 game for use in an advertising campaign. The work involved modifying the existing game to meet the requirements of a client served by TPP eMarketing.</p>
 thumbnail:
 images: []
 website:

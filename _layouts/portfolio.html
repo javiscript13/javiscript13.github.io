@@ -54,6 +54,37 @@ layout: default
 			{% endif %}
 		</header>
 
+		{% if page.showcase %}
+		{% comment %}
+		  Showcase layout (opt-in with `showcase: true`): introduction, one card per component (same size,
+		  title and text always visible) and a detailed section for each one, reached by the card's anchor link.
+		{% endcomment %}
+		<div class="project-body">
+			{{ page.description }}
+		</div>
+
+		<div class="component-cards">
+			{% for component in page.components %}
+			<article class="component-card">
+				<div class="component-card-image"><img src="{{ component.image | relative_url }}" alt="" /></div>
+				<div class="component-card-body">
+					<h3 class="component-card-title">{{ component.number }}. {{ component.title }}</h3>
+					<p class="component-card-tags">{{ component.card_tags | join: " · " }}</p>
+					<p class="component-card-text">{{ component.card_text }}</p>
+					<a class="link-arrow" href="#{{ component.id }}">{{ component.card_action }}</a>
+				</div>
+			</article>
+			{% endfor %}
+		</div>
+
+		{% for component in page.components %}
+		<section class="project-body component-detail" id="{{ component.id }}">
+			<h3 class="component-detail-title">{{ component.title }}</h3>
+			{{ component.description }}
+			{% include project_links.html website=component.website repository=component.repository availability=component.availability availability_note=component.availability_note repository_note=component.repository_note %}
+		</section>
+		{% endfor %}
+		{% else %}
 		<div class="project-body">
 			{{ page.description }}
 
@@ -94,6 +125,8 @@ layout: default
 		</div>
 		{% endif %}
 		{% endfor %}
+
+		{% endif %}
 
 		<div class="project-body">{{ content }}</div>
 	</div>

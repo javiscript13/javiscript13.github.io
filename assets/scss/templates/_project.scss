@@ -661,6 +661,55 @@ footer .text-color {
   margin: 0 0 22px;
 }
 
+// Opening block: text on the left, photo on the right (30% of the row)
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+
+  .about-text {
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: none;
+  }
+
+  // Photo with the page header's shapes: a warm circle behind one corner and a coral bar.
+  .about-photo {
+    position: relative;
+    flex: 0 0 auto;
+    width: 190px;
+    margin: 0 44px 0 28px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #e8dfcf;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: -28px;
+      bottom: 26px;
+      width: 56px;
+      height: 6px;
+      background: $primary-color;
+    }
+
+    img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .about-skills {
   .skill-row {
     padding: 14px 0;
@@ -805,6 +854,18 @@ footer .text-color {
     .about-text p {
       font-size: 16px;
       line-height: 28px;
+    }
+  }
+
+  .about-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+
+    .about-photo {
+      align-self: center;
+      width: 200px;
+      margin: 28px 0 0;
     }
   }
 

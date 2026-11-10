@@ -8,8 +8,14 @@ layout: default
 <!-- 1. Opening text (no title) -->
 <section class="section-sm about-block">
 	<div class="container">
-		<div class="about-text">
-			{% for paragraph in t.about_intro %}<p class="about-intro-text">{{ paragraph }}</p>{% endfor %}
+		{% comment %} Two columns: text (70%) and photo (30%, right). On small screens the photo goes below the text. {% endcomment %}
+		<div class="about-intro">
+			<div class="about-text">
+				{% for paragraph in t.about_intro %}<p class="about-intro-text">{{ paragraph }}</p>{% endfor %}
+			</div>
+			<div class="about-photo">
+				<img src="{{ '/assets/images/about/javier-hernandez.jpg' | relative_url }}" alt="{{ site.copyright | escape }}" width="960" height="960">
+			</div>
 		</div>
 	</div>
 </section>

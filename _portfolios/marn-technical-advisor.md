@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 source_id: EXP-09   # internal ID in the source database; not shown on the site
-title: "Ministry of Environment: Technical Advisor to the Vice Ministry"
+title: "Ministry of Environment: Technical Advisor to the Vice Ministry of Environment"
 order: 12
 category: data-analytics
 tags: ["Python", "CSV", "Excel", "Data integration", "Reports"]

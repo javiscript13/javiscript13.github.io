@@ -27,5 +27,5 @@ es:
   role: "Implementador"
   short_description: "Adaptación de un juego de Fórmula 1 existente para un cliente publicitario."
   description: |-
-    <p>Adapté código existente en ActionScript 3 de un juego de Fórmula 1 para usarlo en una campaña publicitaria. El trabajo consistió en modificar el juego para cumplir los requerimientos de un cliente atendido por TPP eMarketing.</p>
+    <p>Adapté código existente en ActionScript 3 de un juego de Fórmula 1 para usarlo en una campaña publicitaria. El trabajo consistió en modificar el juego para responder a las necesidades de un cliente de TPP eMarketing.</p>
 ---

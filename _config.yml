@@ -6,10 +6,10 @@ brand: "@javiscript13"
 email: "jahernandezdepaz@gmail.com"
 phone: ""
 address: "Guatemala"
-description: "I help organizations improve the way they work through technology, data, and practical digital solutions."
+description: "I improve the way organizations work through technology, data, and practical digital solutions."
 logo: "/assets/images/logo.png"
 logo_icon: "/assets/images/logo-b.png"
-footer_content: "Technology & Business Process Consultant helping organizations improve the way they work through technology, data, and practical digital solutions."
+footer_content: "Technology & Business Process Consultant improving the way organizations work through technology, data, and practical digital solutions."
 copyright: "Javier Hernandez De Paz"   # shown as "© <build year> <copyright>" (see _includes/footer.html)
 
 

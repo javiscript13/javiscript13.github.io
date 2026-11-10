@@ -11,7 +11,7 @@ en:
   toggle_navigation: "Toggle navigation"
   language: "Language"
   # Home
-  hero_title: 'I help organizations <span class="text-color">improve how they work</span> by connecting processes, technology, and data.'
+  hero_title: '<span class="text-color">I improve the way organizations work</span> by connecting processes, technology, and data.'
   hero_lead: "I'm Javier Hernandez, a <strong>Technology &amp; Business Process Consultant</strong> based in Guatemala. I help turn organizational challenges into practical improvements through technology and data."
   what_i_do: "What I do"
   selected_projects: "Selected projects:"
@@ -72,8 +72,8 @@ en:
 
 es:
   # Texts that in English come from _config.yml (description, footer_content)
-  site_description: "Ayudo a las organizaciones a mejorar su forma de trabajar mediante tecnología, datos y soluciones digitales prácticas."
-  footer_content: "Consultor en tecnología y procesos de negocio. Ayudo a las organizaciones a mejorar su forma de trabajar mediante tecnología, datos y soluciones digitales prácticas."
+  site_description: "Mejoro la forma en que trabajan las organizaciones mediante tecnología, datos y soluciones digitales prácticas."
+  footer_content: "Consultor en tecnología y procesos de negocio. Mejoro la forma en que trabajan las organizaciones mediante tecnología, datos y soluciones digitales prácticas."
   # Header / language switcher
   nav:
     home: "Inicio"
@@ -81,7 +81,7 @@ es:
   toggle_navigation: "Mostrar u ocultar el menú"
   language: "Idioma"
   # Home
-  hero_title: 'Ayudo a las organizaciones a <span class="text-color">mejorar su forma de trabajar</span> conectando procesos, tecnología y datos.'
+  hero_title: '<span class="text-color">Mejoro la forma en que trabajan las organizaciones</span> conectando procesos, tecnología y datos.'
   hero_lead: "Soy Javier Hernandez, <strong>consultor en tecnología y procesos de negocio</strong> con sede en Guatemala. Ayudo a convertir los retos de una organización en mejoras prácticas mediante tecnología y datos."
   what_i_do: "Qué hago"
   selected_projects: "Proyectos seleccionados:"

@@ -82,4 +82,4 @@ Shown on About; a project links to one with `parent_type: experience|collaborati
 - Related Projects on project pages is switched off (`related_enabled` in `_layouts/portfolio.html`) until relations are defined.
 
 ## Run locally
-`docker compose up` (serves http://localhost:4000). To only check that the site builds: `docker compose run --rm jekyll jekyll build -d /tmp/site`.
+`docker compose up` (serves http://localhost:4000). To only check that the site builds: `docker compose run --rm jekyll bundle exec jekyll build -d /tmp/site`.

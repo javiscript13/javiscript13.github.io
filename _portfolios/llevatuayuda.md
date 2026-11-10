@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "Guatecambia"
 role: "Web development; OpenStreetMap"
-short_description: "A platform to register and look up places to donate after a disaster."
+short_description: "A platform to find and register donation locations following a disaster."
 description: |-
-  <p>A platform to register and look up places where people could donate after a disaster. A semi-automatic process placed the pins on OpenStreetMap.</p>
+  <p>Llevatuayuda was a platform designed to help people find places to donate supplies after a disaster. Users could register donation locations, which were then added to a map through a semi-automated process using OpenStreetMap.</p>
 thumbnail: "/assets/images/portfolio/llevatuayuda1.jpg"
 images: []
 website:

@@ -10,9 +10,10 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: 
 role: "Implementer"
-short_description: "Joomla components and plugins for educational content and access-controlling memberships."
+short_description: "Custom Joomla components and plugins for educational content and membership-based access."
 description: |-
-  <p>Development of components and plugins for educational content related to scientific papers and articles, and of memberships that controlled access to content for physicians in the US. The client installed the components on several sites.</p>
+  <p>Developed Joomla components and plugins for a medical education initiative. The tools supported the publication of educational material based on scientific papers and articles, as well as membership management to control access to content for physicians in the United States who needed continuing medical education credits.</p>
+  <p>The client installed and used the components across several websites.</p>
 thumbnail:
 images: []
 website:

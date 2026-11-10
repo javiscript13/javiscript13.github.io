@@ -11,10 +11,11 @@ featured: 2   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: 
 role: "Technology lead / programming"
-short_description: "Cross-cutting technology work for a civic organization: development, free software, platforms and open government."
+short_description: "Cross-cutting technology work at a civic organization, spanning software development, digital platforms, open government, data and capacity building."
 description: |-
-  <p>Cross-cutting work in development, recovery of websites, customization of free software, implementation of platforms, training, civic technology, open government and data.</p>
-  <p>Several of the projects from this period are listed separately.</p>
+  <p>At Guatecambia, I was responsible for the organization's technology and software development work, contributing across a range of civic technology and open government initiatives.</p>
+  <p>My work included developing web applications, recovering and customizing existing websites, adapting open-source platforms, implementing digital tools, and supporting organizations through practical technology training. I also contributed to projects involving public information, government transparency and civic participation.</p>
+  <p>Rather than working on a single product, I moved across different initiatives according to each project's needs. Several of these projects are presented individually in this portfolio.</p>
 thumbnail:
 images: []
 website:

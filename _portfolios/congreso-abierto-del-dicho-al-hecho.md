@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "Guatecambia"
 role: "Free software adaptation"
-short_description: "An adaptation of free software that, as Del Dicho al Hecho, later became Congreso Abierto."
+short_description: "Adaptation of an open-source platform that served as the basis for the Del Dicho al Hecho / Congreso Abierto initiative."
 description: |-
-  <p>An adaptation of free software that later became Congreso Abierto, using Del Dicho al Hecho.</p>
+  <p>I adapted an existing open-source platform for the Del Dicho al Hecho initiative at Guatecambia. The work became part of the effort that later evolved into Congreso Abierto.</p>
 thumbnail:
 images: []
 website:

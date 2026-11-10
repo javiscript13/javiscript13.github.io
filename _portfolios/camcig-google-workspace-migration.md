@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "CAMCIG"
 role: "Implementer"
-short_description: "Migration from a mail system that no longer worked to Gmail and Google Workspace."
+short_description: "Migration from a non-functional email system to Google Workspace."
 description: |-
-  <p>Migration from a mail system that no longer worked to Gmail and Google Workspace: permissions setup, migration of historical email as far as possible, and a digital archive.</p>
+  <p>I migrated CAMCIG's email environment to Gmail and Google Workspace after problems with its previous mail system. The work included configuring accounts and permissions, transferring historical email where possible, and organizing a digital archive.</p>
 thumbnail:
 images: []
 website:

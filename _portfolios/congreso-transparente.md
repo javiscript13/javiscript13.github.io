@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "Guatecambia"
 role: "Maintenance; web development"
-short_description: "Recovery and reinstallation of an abandoned website, plus later modifications."
+short_description: "Recovery and reinstallation of an abandoned transparency website, followed by maintenance and further modifications."
 description: |-
-  <p>Recovery and reinstallation of the abandoned Congreso Transparente website, followed by later modifications.</p>
+  <p>I recovered and reinstalled the abandoned Congreso Transparente website while working at Guatecambia, restoring the site and making subsequent modifications as needed.</p>
 thumbnail:
 images: []
 website:

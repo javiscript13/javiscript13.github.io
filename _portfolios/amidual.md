@@ -10,10 +10,10 @@ featured: 2   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client:
 role: "Implementer"
-short_description: "An online learning platform for journalists and communicators across Latin America."
+short_description: "Customization and deployment of a Chamilo learning platform for a media and information literacy training initiative."
 description: |-
-  <p>Amidual is an online learning platform created by Radio Sónica in collaboration with DW Akademie for journalists and communicators across Latin America.</p>
-  <p>The platform was designed to provide training in Media and Information Literacy (MIL). My work focused on customizing and deploying the platform to meet the project's needs.</p>
+  <p>Amidual was an online learning initiative by Radio Sónica, developed in collaboration with DW Akademie for journalists and communicators across Latin America.</p>
+  <p>I customized and deployed the Chamilo learning management system to support the project's training activities and meet its operational needs.</p>
 thumbnail: "/assets/images/portfolio/amidual.png"
 images: []
 website:

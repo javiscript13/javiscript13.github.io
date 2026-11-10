@@ -11,10 +11,11 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: 
 role: "Technical Advisor to the Vice Ministry of Environment"
-short_description: "Liaison between the Vice Ministry, the IT Department and an external team, including data integration and report review."
+short_description: "Technical advisory work connecting the Vice Ministry, the IT Department and an external team, with a focus on data integration, quality and reporting."
 description: |-
-  <p>I acted as the liaison between the Vice Ministry, the IT Department and an external team. I wrote scripts to integrate data from systems and from delegates' Excel files; transformed and cleaned data; coordinated the delivery of CSV files from at least three systems; set priorities with the IT Department; and reviewed the quality of existing reports and visualizations and adapted them.</p>
-  <p>I did not create all of the visualizations.</p>
+  <p>As Technical Advisor to the Vice Ministry of Environment, I worked as a liaison between the Vice Ministry, the IT Department and an external technical team.</p>
+  <p>I developed scripts to integrate information from institutional systems and Excel files maintained by regional delegates, transforming and cleaning data for further use. I also coordinated the delivery of CSV exports from at least three systems, helped prioritize requests with the IT Department, and reviewed existing reports and visualizations, adapting them to operational needs.</p>
+  <p>My role focused on connecting information sources, improving data consistency and coordinating the use of existing systems and reporting tools. I did not develop the underlying institutional systems or create all of the visualizations.</p>
 thumbnail:
 images: []
 website:

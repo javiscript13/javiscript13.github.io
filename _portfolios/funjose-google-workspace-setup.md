@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "FUNJOSE"
 role: "Implementer"
-short_description: "Google Workspace setup for FUNJOSE."
+short_description: "Google Workspace implementation and account setup for FUNJOSE."
 description: |-
-  <p>Google Workspace setup for FUNJOSE.</p>
+  <p>Configured Google Workspace for FUNJOSE, setting up the organization's email environment and user accounts to support its day-to-day communication and collaboration.</p>
 thumbnail:
 images: []
 website:

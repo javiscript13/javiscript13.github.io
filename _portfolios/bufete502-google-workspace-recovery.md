@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "Bufete502"
 role: "Implementer"
-short_description: "Fixing a Google Workspace configuration after several attempts."
+short_description: "Recovery of a Google Workspace configuration and restoration of domain and user setup."
 description: |-
-  <p>Correction of the Google Workspace configuration after several attempts, domain revalidation and user creation.</p>
+  <p>Reviewed and corrected a Google Workspace configuration after previous setup attempts had left it in an unusable state. The work included revalidating the domain and creating user accounts so the organization could use its email service.</p>
 thumbnail:
 images: []
 website:

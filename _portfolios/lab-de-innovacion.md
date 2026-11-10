@@ -10,9 +10,9 @@ featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = af
 year:
 client: "Guatecambia"
 role: "Web development"
-short_description: "A web platform with public works that citizens could rate and comment on anonymously."
+short_description: "A civic participation platform for exploring public works and collecting citizen feedback."
 description: |-
-  <p>A web platform listing public works so that citizens could rate and comment on them anonymously. It had little adoption.</p>
+  <p>A web platform developed at Guatecambia to make information about public works available to citizens and allow them to rate and comment on projects anonymously.</p>
 thumbnail:
 images: []
 website:

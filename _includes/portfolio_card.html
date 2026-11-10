@@ -1,0 +1,33 @@
+{% comment %}
+  Project card: image (or typographic cover when there is none), then category, title and
+  short description, always visible. On hover and keyboard focus the original "double
+  curtain" overlay (see .overlay-box in _portfolio.scss) slides over the image.
+  Usage: {% include portfolio_card.html project=project show_category=true col_class="col-12 col-md-6" %}
+  - col_class: optional (default 1 / 2 / 3 columns by screen width)
+  - grid:      true in the Work section (item of the filterable grid; fixed text height so rows stay even)
+  Projects without a thumbnail get a graphic cover (include project_cover.html): pure geometry, no text, no invented image.
+{% endcomment %}
+{% assign project = include.project %}
+{% assign card_category = site.data.categories | where: "id", project.category | first %}
+<div class="{{ include.col_class | default: 'col-12 col-md-6 col-xl-4' }} mb-5{% if include.grid %} shuffle-item{% endif %}"{% if include.grid %} data-groups='["{{ project.category }}"]'{% endif %}>
+  <a class="project-card inner-box{% if include.grid %} project-card--grid{% endif %}" href="{{ project.url | relative_url }}">
+    <div class="project-card-image{% unless project.thumbnail %} is-cover{% endunless %}">
+      {% if project.thumbnail %}
+      <img src="{{ project.thumbnail | relative_url }}" alt="" />
+      {% else %}
+      {% include project_cover.html project=project %}
+      {% endif %}
+      <div class="overlay-box" aria-hidden="true">
+        <div class="overlay-inner">
+          <h5 class="mb-0">View project &rarr;</h5>
+          {% if project.tags.size > 0 %}<p class="mt-2 mb-0">{{ project.tags | slice: 0, 3 | join: " · " }}</p>{% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="project-card-body">
+      {% if include.show_category and card_category %}<span class="project-card-category">{{ card_category.name }}</span>{% endif %}
+      <h5 class="project-card-title">{{ project.title }}</h5>
+      {% if project.short_description %}<p class="project-card-text">{{ project.short_description }}</p>{% endif %}
+    </div>
+  </a>
+</div>

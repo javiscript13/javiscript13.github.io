@@ -1,6 +1,9 @@
 .footer-widget{
 
 	color: rgba(255,255,255,.7);
+	p{
+		color: rgba(255,255,255,.75);
+	}
 	.lh-38{
 		line-height: 38px;
 	}
@@ -10,7 +13,7 @@
 			color: rgba(255,255,255,.7);
 			a{
 				color: rgba(255,255,255,.7);
-				text-transform: capitalize;
+				text-transform: none;
 			}
 		}
 	}

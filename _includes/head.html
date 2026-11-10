@@ -1,17 +1,18 @@
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+  {% comment %} Title: seo_title if set (Home), else "<page title> | <site title>". {% endcomment %}
+  <title>{% if page.seo_title %}{{ page.seo_title | escape }}{% elsif page.title %}{{ page.title | escape }} | {{ site.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{%if page.description%}{{page.description}}{%else%}{{site.description}}{%endif%}">
-  
-  <!-- theme meta -->
-  <meta name="theme-name" content="dizer-jekyll" />
-    
-  {% if site.author %}
-  <meta name="author" content="{{ . }}">
+  {% comment %} Meta description is always plain text: short_description, else description without HTML, else the site description. {% endcomment %}
+  {% assign meta_description = page.meta_description | default: page.short_description | default: page.description | default: site.description %}
+  <meta name="description" content="{{ meta_description | strip_html | strip_newlines | normalize_whitespace | truncate: 160 | escape }}">
+  {% if page.noindex or page.visibility and page.visibility != 'featured' and page.visibility != 'public' %}
+  <meta name="robots" content="noindex, nofollow">
   {% endif %}
+  
+  <meta name="author" content="{{ site.copyright | escape }}">
 
   {% for css in site.data.plugins.css %}
   <link rel="stylesheet" href="{{ css | relative_url }}">

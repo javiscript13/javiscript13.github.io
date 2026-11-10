@@ -160,24 +160,58 @@
     $('.search-wrapper').removeClass('open');
   });
 
-  // Shuffle js filter and masonry
-  var containerEl = document.querySelector('.shuffle-wrapper');
-  if (containerEl) {
+  // Work page: filterable grid (Shuffle, as in the original site) controlled by the category buttons.
+  var workGrid = document.querySelector('.work-grid');
+  if (workGrid && window.Shuffle) {
     var Shuffle = window.Shuffle;
-    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var workShuffle = new Shuffle(workGrid, {
       itemSelector: '.shuffle-item',
-      buffer: 1
+      buffer: 1,
+      speed: reduceMotion ? 0 : 400
+    });
+    // Re-measure once fonts and images are ready so rows never overlap.
+    var relayout = function () { workShuffle.update(); };
+    $(window).on('load resize', relayout);
+    if (document.fonts && document.fonts.ready) { document.fonts.ready.then(relayout); }
+
+    // Show at most `pageSize` projects of the selected category; "Load more" adds `pageSize` more.
+    var pageSize = 9;
+    var limit = pageSize;
+    var current = 'all';
+    var $status = $('.work-status');
+    var $more = $('.work-more');
+    var allItems = $(workGrid).find('.shuffle-item').toArray();
+
+    var applyWork = function () {
+      var matching = allItems.filter(function (el) {
+        return current === 'all' || (el.getAttribute('data-groups') || '').indexOf(current) !== -1;
+      });
+      var shown = matching.slice(0, limit);
+      workShuffle.filter(function (el) { return shown.indexOf(el) !== -1; });
+      $status.find('.work-status-count').text(
+        'Showing ' + (shown.length < matching.length ? shown.length + ' of ' + matching.length : matching.length) +
+        ' project' + (matching.length === 1 ? '' : 's'));
+      $more.prop('hidden', shown.length >= matching.length);
+    };
+
+    $('.work-filter').on('click', function () {
+      var $btn = $(this);
+      current = $btn.data('filter');
+      limit = pageSize;
+      $('.work-filter').removeClass('is-active').attr('aria-pressed', 'false');
+      $btn.addClass('is-active').attr('aria-pressed', 'true');
+      $status.find('.work-status-text').text(current === 'all' ? '' : $btn.data('description'));
+      applyWork();
     });
 
-    $('input[name="shuffle-filter"]').on('change', function (evt) {
-      var input = evt.currentTarget;
-      if (input.checked) {
-        myShuffle.filter(input.value);
-      }
+    $more.on('click', function () {
+      limit += pageSize;
+      applyWork();
     });
+
+    applyWork();
   }
-
-
 
   // meta social link
 
@@ -185,15 +219,6 @@
     e.preventDefault();
     $('.meta-share .social-links').toggleClass('open');
 
-  });
-
-  $('div').slice(0, 6).show(); // select the first ten
-  $('#load').click(function (e) { // click event for load more
-    e.preventDefault();
-    $('div:hidden').slice(0, 3).show(); // select next 10 hidden divs and show them
-    if ($('div:hidden').length === 0) { // check if any hidden divs still exist
-      alert('No more divs'); // alert if there are none left
-    }
   });
 
   if ($("#search-input").length > 0) {

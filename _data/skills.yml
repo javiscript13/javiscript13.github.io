@@ -1,0 +1,22 @@
+# Technical background shown on About, grouped by area. Every item comes from the
+# technologies already listed on the site or documented in the experience/project records.
+- area: "Web & software development"
+  items: ["Python", "Django", "JavaScript", "Node.js", "Express.js", "React", "Vue.js", "PHP", "jQuery", "PixiJS"]
+
+- area: "Data & visualization"
+  items: ["D3.js", "Scrapy", "Selenium", "Python scripts", "CSV data integration"]
+
+- area: "Platforms & content systems"
+  items: ["WordPress", "Joomla", "Moodle", "Chamilo", "Jekyll", "Alaveteli (Rails templating)", "Google Workspace"]
+
+- area: "Infrastructure & operations"
+  items: ["Linux server configuration", "Docker", "Docker Compose", "Nginx", "Apache", "GitLab"]
+
+- area: "Databases"
+  items: ["PostgreSQL", "MySQL", "MariaDB", "MongoDB"]
+
+- area: "IoT & embedded"
+  items: ["ESP32", "C++ (Arduino)", "MQTT"]
+
+- area: "Business tools"
+  items: ["Excel", "Access", "VBA", "SAP (as a data source)"]

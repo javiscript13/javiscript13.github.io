@@ -1,0 +1,46 @@
+# Single source for the three main service areas shown on Home ("What I do": title + summary).
+# `description` and the `complementary` capabilities are kept as reference content for
+# projects / About copy; they are not rendered on their own page any more.
+#
+# Wording is limited to what is documented in the experience/project records
+# (see _data/experiences.yml and the projects in _portfolios/). Supporting evidence
+# per item, for review:
+#   - Process analysis:  EXP-01 (process improvement, incident classification),
+#                        EXP-04 (requirements gathering, client meetings).
+#   - Tech consulting:   EXP-04, EXP-05 (technology lead), EXP-09 (technical advisor).
+#   - Data & software:   EXP-09 (data integration/cleaning, reports), Mirador Electoral
+#                        and Mirador Judicial (D3.js), Lagos Abiertos, 3 de 3 Guatemala.
+#   - Digital workplace: Google Workspace setup/migration work in the project database.
+#   - Learning platforms: Amidual (Chamilo), EXP-06, EXP-08 (educational platforms, Moodle).
+#
+# Fields: title (shown everywhere), summary (short, About), description (Services page),
+#         icon (Themify icon class, About cards).
+main:
+  - id: process-analysis
+    title: "Business Process Analysis & Improvement"
+    icon: "ti-bar-chart-alt"
+    summary: "Understanding how organizations operate, identifying bottlenecks and translating business needs into clearer processes and requirements."
+    description: "I help organizations understand how a process works today and turn that understanding into clear requirements and practical improvements. My experience includes organizing and routing operational incidents and integrating Excel and SAP data in a retail operations context, leading a procurement management software project from client requirements to delivery follow-up, and building a business management system for a pharmaceutical distributor's inventory, orders and invoicing."
+
+  - id: technology-consulting
+    # No project card documents this capability on its own; it is backed by these experiences (see About).
+    experiences: [EXP-09, EXP-05]
+    title: "Technology Consulting & Solution Design"
+    icon: "ti-layers"
+    summary: "Evaluating organizational needs and shaping technology solutions, from defining requirements and selecting tools to coordinating implementation."
+    description: "I help organizations decide what technology they need and how to put it in place: clarifying the need, setting priorities, choosing between adapting an existing platform and building something custom, and coordinating delivery. My experience includes acting as technical advisor between a ministry's leadership, its IT department and an external team; leading technology at a civic technology organization; and coordinating three to four software projects with a team of two developers as a project manager."
+
+  - id: data-software
+    title: "Data Integration, Visualization & Software Implementation"
+    icon: "ti-pie-chart"
+    summary: "Connecting information across systems, transforming data into useful insights, and building or implementing software to support real-world needs."
+    description: "I integrate data from different systems and spreadsheets, clean and transform it, and make it understandable through reports and interactive visualizations, and I implement the software around it, from data collection to the interface people use. My work includes integration scripts for a ministry's systems and Excel files, D3.js visualizations of electoral and judicial data, a citizen-science platform that collects sensor data from IoT stations, and full-stack applications built with Django, React and Express.js."
+
+complementary:
+  - id: digital-workplace
+    title: "Digital Workplace & Collaboration"
+    description: "Setting up, migrating and fixing Google Workspace for organizations: accounts and permissions, domain configuration and validation, and migration of historical email from legacy systems where possible."
+
+  - id: learning-platforms
+    title: "Learning Platforms & Digital Education"
+    description: "Implementing and customizing learning platforms such as Chamilo and Moodle, setting up courses from instructional designs provided by others, and developing educational games."

@@ -2,11 +2,18 @@
 $white: #fff;
 $black: #000;
 $primary-color:#f57479;
+$primary-text:#d4565c;   // same coral, darker, for small text and links on light surfaces
 $secondary-color:#1f1f40;
 $extra-color:#934ae4;
-$border-color: #e5e5e5;
+$border-color: #e8e2d6;
 $black-light:#848485;
 $yello:#ffc429;
 $blue: #470FA8;
-$heading-font:'Poppins', sans-serif;
-$body-font:'Open Sans', sans-serif;
+$heading-font:'Merriweather', serif;
+$body-font:'Lora', serif;
+
+// Warm surfaces and text
+$surface: #faf7f2;
+$surface-alt: #f5f1e9;
+$text: #4a4d5a;
+$text-soft: #5e6170;

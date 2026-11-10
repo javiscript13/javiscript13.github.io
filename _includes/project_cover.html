@@ -1,0 +1,43 @@
+{% comment %}
+  Graphic cover for a project card that has no image. One shared editorial system: a warm ground
+  (three barely different tints), lots of empty space, and two or three simple forms per composition
+  in sand, deep blue and coral. No text, icons, grids or repeated patterns. Eight asymmetric, each with both deep blue and coral,
+  compositions rotate with the project's `order`, so neighbouring cards differ but belong together.
+  Usage: {% include project_cover.html project=project %}
+{% endcomment %}
+{% assign cv_seed = include.project.order | default: 1 %}
+{% assign cv_v = cv_seed | modulo: 8 %}
+{% assign cv_tint = cv_seed | modulo: 3 %}
+<svg class="project-card-cover" viewBox="0 0 160 90" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+<rect width="160" height="90" class="cv-ground-{{ cv_tint }}"/>
+{% case cv_v %}
+{% when 0 %}
+  <circle cx="0" cy="90" r="46" class="cv-navy"/>
+  <rect x="104" y="22" width="26" height="3" class="cv-coral"/>
+{% when 1 %}
+  <rect x="96" y="0" width="30" height="90" class="cv-navy"/>
+  <rect x="38" y="58" width="22" height="22" class="cv-coral"/>
+{% when 2 %}
+  <circle cx="132" cy="38" r="58" class="cv-line"/>
+  <rect x="22" y="64" width="40" height="5" class="cv-navy"/>
+  <circle cx="132" cy="38" r="7" class="cv-coral"/>
+{% when 3 %}
+  <circle cx="58" cy="52" r="34" class="cv-sand"/>
+  <rect x="118" y="0" width="3" height="58" class="cv-navy"/>
+  <rect x="100" y="70" width="20" height="3" class="cv-coral"/>
+{% when 4 %}
+  <path d="M40 0 A44 44 0 0 0 128 0 Z" class="cv-navy"/>
+  <circle cx="30" cy="66" r="7" class="cv-coral"/>
+{% when 5 %}
+  <rect x="0" y="52" width="104" height="38" class="cv-sand"/>
+  <rect x="124" y="16" width="3" height="40" class="cv-coral"/>
+  <rect x="30" y="20" width="14" height="14" class="cv-navy"/>
+{% when 6 %}
+  <path d="M160 0 L160 62 L98 0 Z" class="cv-navy"/>
+  <rect x="24" y="30" width="3" height="34" class="cv-coral"/>
+{% else %}
+  <circle cx="112" cy="100" r="52" class="cv-sand"/>
+  <rect x="26" y="18" width="34" height="34" class="cv-navy"/>
+  <circle cx="60" cy="52" r="6" class="cv-coral"/>
+{% endcase %}
+</svg>

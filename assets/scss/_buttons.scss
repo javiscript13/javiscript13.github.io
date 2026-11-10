@@ -1,11 +1,13 @@
+// Quieter button language: outlined navy for the one main action, text links for the rest.
 .btn {
-  padding: 12px 35px;
-  border-radius: 3px;
-  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 2px;
+  font-size: 15px;
   display: inline-block;
-  font-weight: 500;
-  text-transform: capitalize;
-  transition: all .3s ease;
+  font-weight: 600;
+  letter-spacing: .1px;
+  text-transform: none;
+  transition: all .25s ease;
   border: 1px solid;
   position: relative;
   z-index: 1;
@@ -16,15 +18,20 @@
     box-shadow: none !important;
   }
 
+  &:focus-visible {
+    outline: 2px solid $primary-text;
+    outline-offset: 2px;
+  }
+
   &:active {
     box-shadow: none;
   }
 }
 
 .btn-primary {
-  background: $primary-color;
-  color: $white;
-  border-color: $primary-color;
+  background: transparent;
+  color: $secondary-color;
+  border-color: $secondary-color;
 
   &:hover,
   &:active,
@@ -33,6 +40,41 @@
     background: $secondary-color !important;
     border-color: $secondary-color !important;
     color: $white !important;
+  }
+}
+
+// Text link with an arrow, for secondary actions
+.link-arrow {
+  font-family: $body-font;
+  font-size: 15px;
+  font-weight: 600;
+  color: $primary-text;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+
+  &::after {
+    content: "\2192";
+    display: inline-block;
+    margin-left: 6px;
+    transition: transform .25s ease;
+  }
+
+  &--external::after {
+    content: "\2197";
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-bottom-color: currentColor;
+
+    &::after {
+      transform: translateX(3px);
+    }
+  }
+
+  &--external:hover::after,
+  &--external:focus-visible::after {
+    transform: translate(2px, -2px);
   }
 }
 
@@ -52,16 +94,16 @@
 }
 
 .btn-outline-primary {
-  border-color: $primary-color;
-  color: $primary-color;
+  border-color: $border-color;
+  color: $secondary-color;
 
   &:hover,
   &:active,
   &.focus,
   &.active {
-    background: $primary-color !important;
-    color: $white !important;
-    border-color: $primary-color !important;
+    background: transparent !important;
+    color: $primary-text !important;
+    border-color: $primary-text !important;
   }
 }
 

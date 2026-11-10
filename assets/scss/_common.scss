@@ -15,7 +15,7 @@
 }
 
 .text-color {
-	color: $primary-color;
+	color: $primary-text;
 }
 
 .text-black {
@@ -35,6 +35,7 @@
 }
 
 a {
+	color: $primary-text;
 	transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-webkit-transition: all .3s ease;

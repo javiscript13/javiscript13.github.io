@@ -1,0 +1,27 @@
+{% comment %}
+  One row of the About page: an experience or a collaboration (short description always visible).
+  Usage: {% include about_entry.html entry=entry type="experience" %}   (or type="collaboration")
+  Linked projects are looked up by parent_type + parent_id; they are never copied here.
+{% endcomment %}
+{% assign entry = include.entry %}
+{% assign linked = site.portfolios | where_exp: "p", "p.visibility == 'featured' or p.visibility == 'public'" | where: "parent_type", include.type | where: "parent_id", entry.id | sort: "order" %}
+<div class="about-entry row" id="{{ entry.id | downcase }}">
+	<div class="col-md-3">
+		<span class="about-entry-period">{% if include.type == 'experience' %}{{ entry.start }} – {{ entry.end }}{% else %}{{ entry.period }}{% endif %}</span>
+	</div>
+	<div class="col-md-9">
+		{% if include.type == 'experience' %}
+		<h4 class="about-entry-title">{{ entry.role }}</h4>
+		<p class="about-entry-org">{{ entry.organization }}</p>
+		{% else %}
+		<h4 class="about-entry-title">{{ entry.name }}</h4>
+		{% endif %}
+		<p class="about-entry-text">{{ entry.description }}</p>
+		{% if entry.tools.size > 0 %}<p class="about-entry-tools">{{ entry.tools | join: " · " }}</p>{% endif %}
+		{% if linked.size > 0 %}
+		<p class="about-entry-projects">Projects:
+			{% for project in linked %}<a href="{{ project.url | relative_url }}">{{ project.title }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+		</p>
+		{% endif %}
+	</div>
+</div>

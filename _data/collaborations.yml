@@ -1,0 +1,28 @@
+# Volunteering and collaborations (including open source).
+#
+# Source: internal database (kept outside this repository). `id` is the database ID
+# and is also what a project's `parent_id` points to (`parent_type: collaboration`).
+# Only records approved for publication are listed here; reserved, archived or
+# confidential records must NOT be added to this file.
+#
+# Texts are an English translation of the original (Spanish) records and are pending
+# the author's review.
+#
+# Fields: id, name, period, description, visibility (only `public` entries are shown).
+- id: COL-01
+  name: "LiteFarm"
+  period: "2023 (approximately one year)"
+  description: "Open source; full-stack with Express.js and React; international team and meetings in English; ticket-based work and bug fixing."
+  visibility: public
+
+- id: COL-03
+  name: "Edulibre"
+  period: "May 2009 – Dec 2011"
+  description: "Volunteer participation with formal responsibilities; served on the board of directors; set up the first LTSP lab, taught classes to children for several months and coordinated interns for wiki documentation."
+  visibility: public
+
+- id: COL-04
+  name: "DIGI"
+  period: "May 2014 – Sep 2014"
+  description: "Volunteer participation as a programmer on the Tz'utujil language learning project."
+  visibility: public

@@ -1,0 +1,102 @@
+# Professional experiences, in chronological order (the About page shows them newest first).
+#
+# Source: internal experience database (kept outside this repository). `id` is the
+# database ID and is also what a project's `parent_id` points to
+# (`parent_type: experience`). Only records approved for publication are listed here;
+# reserved or confidential records must NOT be added to this file.
+#
+# Texts are an English translation of the original (Spanish) records and are pending
+# the author's review.
+#
+# Fields: id, organization, role, start, end, current (optional), description,
+#         tools (optional list), visibility (only `public` entries are shown).
+- id: EXP-01
+  organization: "Outsource Empresarial (service for ExxonMobil)"
+  role: "US Drystock Logistics Analyst; Process Improvement Specialist"
+  start: "Jul 2009"
+  end: "Jan 2011"
+  description: "Working through Outsource Empresarial on a service for ExxonMobil related to operations and incidents: integration of Excel files from retail stores in the US with SAP tables downloaded from Guatemala, and organization and classification of item-configuration incidents so they reached the responsible departments."
+  tools: ["Excel", "SAP as a data source"]
+  visibility: public
+
+- id: EXP-02
+  organization: "TPP eMarketing"
+  role: "Web development"
+  start: "Feb 2011"
+  end: "Jan 2012"
+  description: "Web development with PHP, ActionScript 2/3, Joomla layout work, and development/adaptation of games. Adapted existing code of a Formula 1 game for an advertising client."
+  tools: ["PHP", "ActionScript 2/3", "Joomla"]
+  visibility: public
+
+- id: EXP-03
+  organization: "Freelance / technology projects"
+  role: "Independent consultant / developer"
+  start: "Feb 2012"
+  end: "Sep 2014"
+  description: "Web development."
+  tools: ["Joomla"]
+  visibility: public
+
+- id: EXP-04
+  organization: "Wolke Solutions"
+  role: "Project Manager"
+  start: "Sep 2014"
+  end: "Apr 2016"
+  description: "Coordination of 3–4 projects with a team of two developers; client meetings, requirements gathering, software explanation and training, estimates, priorities, deliveries, light task assignment, deployment to production and validation. Projects included a procurement management system built from a client's real purchasing processes."
+  tools: ["Project management", "Requirements analysis", "Development coordination"]
+  visibility: public
+
+- id: EXP-05
+  organization: "Guatecambia"
+  role: "Technology and Programming Lead"
+  start: "May 2017"
+  end: "Aug 2019"
+  description: "The only person dedicated to technology and programming, with cross-cutting responsibilities: development, site recovery, free software customization, platform implementation, training, civic technology, open government and data."
+  tools: ["Web development", "Free software", "Civic technology"]
+  visibility: public
+
+- id: EXP-06
+  organization: "Radio Sónica"
+  role: "Educational platform implementation"
+  start: "Sep 2019"
+  end: "Jan 2020"
+  description: "Implementation and customization of Chamilo for the AMI Dual course (Media and Information Literacy), in a blended format."
+  tools: ["Chamilo"]
+  visibility: public
+
+- id: EXP-07
+  organization: "Justice Education Society (JES)"
+  role: "Full-stack developer"
+  start: "Feb 2020"
+  end: "Dec 2020"
+  description: "Participation as a full-stack developer in a software team for Guatemala's Public Ministry. Work on backend, frontend, partial GitLab configuration, contribution to a code generator and bug fixing."
+  tools: ["Full-stack development", "Backend", "Frontend", "GitLab"]
+  visibility: public
+
+- id: EXP-08
+  organization: "Freelance / technology projects"
+  role: "Independent consultant / developer"
+  start: "Jan 2021"
+  end: "Jun 2025"
+  description: "One-off implementations, maintenance of educational platforms, assignments for DW Akademie, data visualization and web application maintenance."
+  tools: ["Web development", "LMS", "Data visualization"]
+  visibility: public
+
+- id: EXP-09
+  organization: "Ministry of Environment (MARN)"
+  role: "Technical Advisor to the Vice Ministry of Environment"
+  start: "Jul 2025"
+  end: "Feb 2026"
+  description: "Liaison between the Vice Ministry, the IT Department and an external team. Scripts to integrate data from systems and from delegates' Excel files; data transformation and cleaning; coordination of the delivery of CSV files from at least three systems; prioritization with the IT Department; quality review and adaptation of existing reports and visualizations."
+  tools: ["Python / scripts", "CSV", "Excel", "Data integration", "Reports"]
+  visibility: public
+
+- id: EXP-10
+  organization: "Freelance"
+  role: "Custom web development and server configuration"
+  start: "Mar 2026"
+  end: "Present"
+  current: true
+  description: "Organizational solutions for data management; ongoing independent activity."
+  tools: ["Web development", "Servers", "Data management"]
+  visibility: public

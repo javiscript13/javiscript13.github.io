@@ -1,0 +1,875 @@
+// Home hero, project cards, Work page and project detail pages.
+// Uses the existing palette and fonts only.
+
+// ---------- Home hero ----------
+.hero-intro {
+  padding: 180px 0 30px;
+
+  .hero-title {
+    font-size: 33px;
+    line-height: 1.4;
+    text-transform: none;
+    max-width: 880px;
+    margin: 0 auto 28px;
+  }
+
+  .hero-lead {
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-soft;
+
+    strong {
+      font-weight: 600;
+      color: $secondary-color;
+    }
+  }
+}
+
+.section-heading {
+  text-transform: none;
+}
+
+.hero-intro + .container .section {
+  padding-top: 80px;
+  border-top: 1px solid $border-color;
+}
+
+// ---------- Project card ----------
+.project-card {
+  display: block;
+  height: 100%;
+  color: inherit;
+
+  .project-card-image {
+    position: relative;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: $surface-alt;
+    border: 1px solid $border-color;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+
+  .project-card-body {
+    padding-top: 18px;
+  }
+
+  .project-card-category {
+    display: block;
+    font-family: $body-font;
+    font-size: 13px;
+    font-weight: 600;
+    color: $primary-text;
+    margin-bottom: 6px;
+  }
+
+  .project-card-title {
+    font-size: 19px;
+    line-height: 27px;
+    margin: 0 0 8px;
+    transition: color .3s ease;
+  }
+
+  .project-card-text {
+    font-size: 15px;
+    line-height: 24px;
+    color: $text-soft;
+    margin: 0;
+  }
+
+  &:hover .project-card-title,
+  &:focus-visible .project-card-title {
+    color: $primary-text;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $primary-text;
+    outline-offset: 4px;
+  }
+
+  // Original double-curtain effect (.overlay-box in _portfolio.scss), kept as is for the mouse and
+  // mirrored for keyboard focus. Text colour is navy on the coral curtain for contrast.
+  .overlay-box .overlay-inner {
+    h5,
+    p {
+      color: $secondary-color;
+    }
+
+    h5 {
+      font-size: 17px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 20px;
+    }
+  }
+
+  &:focus-visible .overlay-box {
+    &::before {
+      transform: scaleX(1);
+    }
+
+    &::after {
+      transform: scaleX(1);
+      transition-delay: .3s;
+    }
+
+    .overlay-inner {
+      h5,
+      p {
+        transform: translateX(0);
+        opacity: 1;
+        transition-delay: .4s;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-card .overlay-box,
+  .project-card .overlay-box::before,
+  .project-card .overlay-box::after,
+  .project-card .overlay-box .overlay-inner h5,
+  .project-card .overlay-box .overlay-inner p {
+    transition: none !important;
+  }
+}
+
+// Graphic cover for projects without an image: pure geometry in the site palette
+.project-card .project-card-image.is-cover {
+  background: $surface-alt;
+}
+
+.project-card-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+
+  .cv-ground-0 { fill: #f5f1e9; }
+  .cv-ground-1 { fill: #f3eee3; }
+  .cv-ground-2 { fill: #f7f3eb; }
+
+  .cv-navy {
+    fill: $secondary-color;
+  }
+
+  .cv-coral {
+    fill: $primary-color;
+  }
+
+  .cv-sand {
+    fill: #e8dfcf;
+  }
+
+  .cv-sand-dark {
+    fill: #cdbfa8;
+  }
+
+  .cv-line {
+    fill: none;
+    stroke: #cdbfa8;
+    stroke-width: 1;
+  }
+
+  .cv-line-navy {
+    fill: none;
+    stroke: $secondary-color;
+    stroke-width: 1.3;
+  }
+}
+
+// Filterable grid on /work/: fixed text height so every card has the same size
+.project-card--grid .project-card-body {
+  min-height: 188px;
+
+  .project-card-title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .project-card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+// ---------- Project detail ----------
+.project-detail {
+  padding: 150px 0 70px;
+
+  .project-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: $white;
+    border: 1px solid $border-color;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+    color: $secondary-color;
+    transition: transform .15s ease, box-shadow .15s ease;
+
+    &:hover {
+      color: $primary-text;
+    }
+
+    &:active {
+      transform: scale(.92);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    }
+  }
+
+  .project-header {
+    max-width: 760px;
+    margin: 0 auto 36px;
+  }
+
+  .project-category {
+    font-family: $heading-font;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: $primary-text;
+    margin-bottom: 10px;
+  }
+
+  .project-title {
+    font-size: 32px;
+    line-height: 1.3;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+
+  .category-pills {
+    margin-bottom: 4px;
+  }
+
+  .project-meta span {
+    margin: 0 12px;
+  }
+
+  .project-body {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 28px;
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 28px;
+      color: #4a4d5a;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  }
+
+  .project-component {
+    border-top: 1px solid $border-color;
+    padding-top: 36px;
+
+    .project-component-title {
+      margin-bottom: 14px;
+    }
+
+    .project-component-lead {
+      color: $text-soft;
+    }
+  }
+
+  .project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 40px;
+    margin-top: 32px;
+    padding-top: 28px;
+    border-top: 1px solid $border-color;
+  }
+
+  .project-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .btn {
+      padding: 9px 22px;
+      font-size: 15px;
+      text-transform: none;
+    }
+
+    .btn i {
+      font-size: 12px;
+      margin-left: 4px;
+    }
+  }
+
+  .project-link-label {
+    font-family: $heading-font;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $primary-text;
+    margin-bottom: 10px;
+  }
+
+  .project-link-note {
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-soft;
+    max-width: 300px;
+  }
+
+  .project-gallery {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 28px;
+      border: 1px solid $border-color;
+    }
+  }
+}
+
+.related-project {
+  padding: 80px 0 40px;
+}
+
+@include tablet {
+  .section-heading {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .hero-intro {
+    padding: 130px 0 10px;
+
+    .hero-title {
+      font-size: 26px;
+      margin-bottom: 22px;
+    }
+  }
+
+  .project-detail {
+    padding: 110px 0 40px;
+
+    .project-title {
+      font-size: 28px;
+    }
+
+    .project-links {
+      flex-direction: column;
+    }
+
+    .project-link-note {
+      max-width: none;
+    }
+  }
+}
+
+// ======================================================================
+// Warm, sober identity (no banner images): page header, Work, About, CTA
+// ======================================================================
+
+// ---------- Page header (replaces the old banner image) ----------
+.page-header {
+  padding: 150px 0 64px;
+  background-color: $surface-alt;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300'%3E%3Ccircle cx='530' cy='210' r='150' fill='%23e8dfcf'/%3E%3Crect x='420' y='0' width='8' height='110' fill='%231f1f40'/%3E%3Crect x='470' y='236' width='56' height='6' fill='%23f57479'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+
+  .page-header-title {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+    text-transform: none;
+  }
+
+  .page-header-text {
+    max-width: 560px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-soft;
+  }
+}
+
+// ---------- Work page: filters and grid ----------
+.work-page {
+  padding: 56px 0 70px;
+
+  .work-filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 12px 20px;
+  }
+
+  .work-filters-label {
+    font-family: $body-font;
+    font-size: 15px;
+    font-style: italic;
+    color: $text-soft;
+  }
+
+  .work-filters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .work-filter {
+    font-family: $body-font;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 8px 16px;
+    color: $secondary-color;
+    background: transparent;
+    border: 1px solid $border-color;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover {
+      border-color: $secondary-color;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-text;
+      outline-offset: 2px;
+    }
+
+    &.is-active {
+      background: $secondary-color;
+      border-color: $secondary-color;
+      color: $white;
+    }
+
+    .work-filter-count {
+      margin-left: 4px;
+      font-size: 13px;
+      opacity: .65;
+    }
+  }
+
+  .work-status {
+    margin: 18px 0 36px;
+    font-size: 15px;
+    color: $text-soft;
+
+    .work-status-count {
+      font-weight: 600;
+      color: $secondary-color;
+    }
+
+    .work-status-text:not(:empty)::before {
+      content: " \2014  ";
+    }
+  }
+}
+
+// ---------- Availability block (project pages) ----------
+.project-detail .project-link-text {
+  font-size: 15px;
+  line-height: 24px;
+  color: $text;
+}
+
+.project-detail .project-link .btn i.ti-github {
+  margin-right: 4px;
+  font-size: 14px;
+}
+
+@include tablet {
+  .page-header {
+    padding: 110px 0 44px;
+    background-position: right -260px center;
+    background-size: auto 100%;
+
+    .page-header-title {
+      font-size: 30px;
+    }
+
+    .page-header-text {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  .work-page {
+    padding-top: 32px;
+
+    .work-filter {
+      font-size: 14px;
+      padding: 7px 13px;
+    }
+
+    .work-filters {
+      gap: 8px 12px;
+    }
+  }
+
+  .project-card--grid .project-card-body {
+    min-height: 0;
+  }
+}
+
+// Balanced line breaks for headings (avoids one-word last lines)
+.hero-title,
+.section-heading,
+.page-header-title,
+.project-title {
+  text-wrap: balance;
+}
+
+// On dark surfaces the original (lighter) coral keeps its contrast
+.navbar-brand .text-color,
+.bg-secondary .text-color,
+footer .text-color {
+  color: $primary-color;
+}
+
+// ======================================================================
+// Depth and personality: tonal bands, hairlines, a quiet eyebrow rule
+// ======================================================================
+
+
+// Availability links on project pages
+.project-detail .project-link .link-arrow {
+  font-size: 16px;
+}
+
+// ======================================================================
+// Home sections and About narrative
+// ======================================================================
+
+.hero-intro {
+  padding-bottom: 80px;
+}
+
+// Alternating bands with hairlines
+.home-band {
+  padding: 72px 0;
+  background: $surface-alt;
+}
+
+.home-section {
+  padding: 80px 0;
+}
+
+// What I do
+.what-i-do-list {
+  margin-top: 28px;
+}
+
+.what-item {
+  height: 100%;
+  padding: 4px 0 4px 20px;
+  border-left: 2px solid $primary-color;
+
+  .what-item-num {
+    font-family: $heading-font;
+    font-size: 13px;
+    color: $primary-text;
+  }
+
+  .what-item-title {
+    font-size: 19px;
+    line-height: 27px;
+    margin: 6px 0 10px;
+  }
+
+  .what-item-text {
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    color: $text-soft;
+  }
+}
+
+// About preview and contact invitation
+.about-preview-text,
+.contact-invite-text {
+  margin: 18px 0 18px;
+  font-size: 19px;
+  line-height: 32px;
+}
+
+.contact-invite-links {
+  margin: 0;
+
+  .link-arrow {
+    margin-right: 24px;
+  }
+
+  .contact-invite-place {
+    color: $text-soft;
+  }
+}
+
+// About page: five plain sections (Introduction, How I work, Technical Background,
+// Professional Experience, Open Source & Volunteering)
+.about-block {
+  padding: 60px 0;
+
+  h3 {
+    font-size: 26px;
+    line-height: 36px;
+    margin: 0 0 22px;
+  }
+
+  .about-text {
+    max-width: 720px;
+
+    p {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}
+
+.about-band {
+  background: $surface-alt;
+}
+
+.about-block .about-text .about-intro-text {
+  font-size: 19px;
+  line-height: 32px;
+  margin: 0 0 22px;
+}
+
+.about-skills {
+  .skill-row {
+    padding: 14px 0;
+    border-top: 1px solid $border-color;
+  }
+
+  .skill-area {
+    font-family: $heading-font;
+    font-size: 13px;
+    font-weight: 700;
+    color: $secondary-color;
+  }
+
+  .skill-items {
+    margin: 0;
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+
+.about-entries {
+  .about-entry {
+    padding: 24px 0;
+    border-top: 1px solid $border-color;
+    scroll-margin-top: 100px;
+  }
+
+  .about-entry-period {
+    font-family: $heading-font;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 26px;
+    color: $primary-text;
+  }
+
+  .about-entry-title {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 2px;
+  }
+
+  .about-entry-org {
+    margin: 0 0 8px;
+    font-weight: 600;
+    color: $text-soft;
+  }
+
+  .about-entry-text {
+    margin: 8px 0 6px;
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .about-entry-tools {
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: $text-soft;
+  }
+
+  .about-entry-projects {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+
+// Home: where each capability is demonstrated
+.what-item .what-item-evidence {
+  margin: 12px 0 0;
+  font-size: 13px;
+  line-height: 20px;
+  color: $text-soft;
+
+  a {
+    color: $primary-text;
+    opacity: .75;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.contact-invite-cta {
+  margin: 0 0 18px;
+  font-size: 18px;
+}
+
+// Footer contact column: readable links, email first
+.footer-contact {
+  li,
+  a {
+    color: rgba(255, 255, 255, .85);
+  }
+
+  .footer-email {
+    font-weight: 600;
+    color: $white;
+    border-bottom: 1px solid rgba(255, 255, 255, .35);
+  }
+
+  a:hover {
+    color: $primary-color !important;
+  }
+}
+
+@include tablet {
+  .hero-intro {
+    padding-bottom: 50px;
+
+    .hero-lead {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  .home-band {
+    padding: 48px 0;
+  }
+
+  .home-section {
+    padding: 52px 0;
+  }
+
+  .what-item {
+    margin-bottom: 22px;
+  }
+
+  .about-preview-text,
+  .contact-invite-text {
+    font-size: 17px;
+    line-height: 29px;
+  }
+
+  .about-block {
+    padding: 40px 0;
+
+    h3 {
+      font-size: 22px;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  .about-entries .about-entry {
+    padding: 18px 0;
+  }
+}
+
+// ---------- Work section on Home (the filters and grid reuse the .work-page styles) ----------
+.selected-work {
+  scroll-margin-top: 70px;
+
+  .work-intro {
+    max-width: 560px;
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $text-soft;
+  }
+
+  .work-page {
+    padding: 0;
+  }
+}
+
+@include tablet {
+  .selected-work .work-intro {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  .selected-work .work-page {
+    padding: 0;
+  }
+}
+
+// "Load more projects" button under the Work grid
+.work-more-wrap {
+  margin: 8px 0 0;
+}
+
+.work-more {
+  padding: 10px 26px;
+  border: 1px solid $secondary-color;
+  border-radius: 999px;
+  background: transparent;
+  color: $secondary-color;
+  font-family: $heading-font;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $secondary-color;
+    color: $white;
+  }
+
+  &[hidden] {
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+{% comment %}
+  Availability block: where the work can be seen. Shows two items, each with a plain-language status.
+  Usage: {% include project_links.html website=... repository=... availability=... availability_note=... repository_note=... %}
+
+  availability:  online  -> `website` is a verified live URL (shown as a button)
+                 offline -> was online, no longer available
+                 private -> never public (internal / private system)
+                 device  -> deployed hardware, not a web service
+                 unknown -> nothing is known about its availability: the "Online" line is not shown (only the source code, if any)
+  repository:    public GitHub URL, if any; otherwise `repository_note` (optional) explains why not.
+{% endcomment %}
+{% assign state = include.availability | default: "private" %}
+{% if state == "unknown" %}
+{% if include.repository %}
+<div class="project-links">
+	<div class="project-link">
+		<span class="project-link-label">Source code</span>
+		<a class="link-arrow link-arrow--external" href="{{ include.repository }}" target="_blank" rel="noopener">Available on GitHub</a>
+	</div>
+</div>
+{% endif %}
+{% else %}
+{% if state == "private" and include.repository == nil and include.repository_note == nil and include.availability_note == nil and include.website == nil %}
+<div class="project-links">
+	<div class="project-link">
+		<span class="project-link-label">Availability</span>
+		<span class="project-link-text">No public demo or source code.</span>
+	</div>
+</div>
+{% else %}
+<div class="project-links">
+	<div class="project-link">
+		<span class="project-link-label">Online</span>
+		{% if state == "online" and include.website %}
+			<a class="link-arrow link-arrow--external" href="{{ include.website }}" target="_blank" rel="noopener">{{ include.website | remove: 'https://' | remove: 'http://' | remove: 'www.' | split: '/' | first }}</a>
+		{% elsif state == "offline" %}
+			<span class="project-link-text">No longer available online.</span>
+		{% elsif state == "device" %}
+			<span class="project-link-text">Deployed in the field; not a web service.</span>
+		{% else %}
+			<span class="project-link-text">Not publicly available.</span>
+		{% endif %}
+		{% if include.availability_note %}<span class="project-link-note">{{ include.availability_note }}</span>{% endif %}
+	</div>
+	<div class="project-link">
+		<span class="project-link-label">Source code</span>
+		{% if include.repository %}
+			<a class="link-arrow link-arrow--external" href="{{ include.repository }}" target="_blank" rel="noopener">Available on GitHub</a>
+		{% else %}
+			<span class="project-link-text">{% if include.repository_note %}{{ include.repository_note }}{% else %}Not public.{% endif %}</span>
+		{% endif %}
+	</div>
+</div>
+{% endif %}
+{% endif %}

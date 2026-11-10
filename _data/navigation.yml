@@ -1,6 +1,7 @@
-#Please use the main menu items under the "name"
+# Main menu. `match` (optional) lists extra URL prefixes that also mark the item
+# as active. Work is a section of Home (/#work), not a menu item.
 main:
   - name: Home
     url: /
   - name: About
-    url: "/about.html"
+    url: /about/

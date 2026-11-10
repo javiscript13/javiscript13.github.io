@@ -2,17 +2,22 @@
   {% for link in site.data.navigation.main %}
   {% assign active = nil %}
 
-  {% for sublink in link.submenu %}
-  {% if page.url contains sublink.url %}
-  {% assign active = 'active' %}
+  {% comment %} "/" only matches the home page itself; other items match by URL prefix. {% endcomment %}
+  {% if link.url == '/' %}
+    {% if page.path == 'index.html' %}{% assign active = 'active' %}{% endif %}
+  {% elsif page.url contains link.url %}
+    {% assign active = 'active' %}
   {% endif %}
+
+  {% for prefix in link.match %}
+    {% if page.url contains prefix %}{% assign active = 'active' %}{% endif %}
   {% endfor %}
 
-  {% if page.url contains link.url %}
-  {% assign active = 'active' %}
-  {% endif %}
+  {% for sublink in link.submenu %}
+    {% if page.url contains sublink.url %}{% assign active = 'active' %}{% endif %}
+  {% endfor %}
 
-  <li class="nav-item {% if link.submenu %} dropdown {% endif %}">
+  <li class="nav-item {{ active }} {% if link.submenu %} dropdown {% endif %}">
     <a class="nav-link" {% if link.submenu %} data-toggle="dropdown"
       {% endif %} href="{{link.url | relative_url}}">{{link.name}}{% if link.submenu %}<i
         class="ti-angle-down ml-2"></i>{% endif %}</a>

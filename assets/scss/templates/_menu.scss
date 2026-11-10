@@ -1,15 +1,20 @@
 #main-nav {
   height: auto;
 
+  .navbar-nav .nav-item.active .nav-link {
+    color: $primary-color;
+  }
+
   .navbar-nav .nav-link {
-    text-transform: uppercase;
+    text-transform: none;
     color: $white;
     font-size: 16px;
-    padding-right: 20px;
-    padding-left: 35px;
-    font-weight: 500;
+    letter-spacing: .2px;
+    padding-right: 18px;
+    padding-left: 26px;
+    font-weight: 600;
     line-height: 40px;
-    font-family: $heading-font;
+    font-family: $body-font;
   }
 
   .navbar-nav.extra-nav .nav-link {
@@ -19,9 +24,9 @@
 }
 
 .navbar-brand {
-  font-size: 40px;
+  font-size: 24px;
   color: $white;
-  font-weight: 500;
+  font-weight: 700;
   font-family: $heading-font;
 }
 

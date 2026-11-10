@@ -22,10 +22,10 @@
   visibility: public
   es:
     organization: "Outsource Empresarial (servicio para ExxonMobil)"
-    role: "Analista de logística US Drystock; especialista en mejora de procesos"
+    role: "Analista de logística de US Drystock; especialista en mejora de procesos"
     start: "Jul 2009"
     end: "Ene 2011"
-    description: "Trabajo a través de Outsource Empresarial en un servicio para ExxonMobil relacionado con operaciones e incidentes: integración de archivos de Excel de tiendas minoristas en EE. UU. con tablas de SAP descargadas desde Guatemala, y organización y clasificación de incidentes de configuración de artículos para que llegaran a los departamentos responsables."
+    description: "Trabajé a través de Outsource Empresarial en un servicio para ExxonMobil relacionado con operaciones e incidentes: integración de archivos de Excel de tiendas minoristas en EE. UU. con tablas de SAP descargadas desde Guatemala, y organización y clasificación de incidentes de configuración de artículos para que llegaran a los departamentos responsables."
     tools: ["Excel", "SAP como fuente de datos"]
 
 - id: EXP-02
@@ -80,7 +80,7 @@
   es:
     role: "Encargado de tecnología y programación"
     end: "Ago 2019"
-    description: "La única persona dedicada a tecnología y programación, con responsabilidades transversales: desarrollo, recuperación de sitios, personalización de software libre, implementación de plataformas, capacitación, tecnología cívica, gobierno abierto y datos."
+    description: "Fui la única persona dedicada a tecnología y programación, con responsabilidades transversales: desarrollo, recuperación de sitios, personalización de software libre, implementación de plataformas, capacitación, tecnología cívica, gobierno abierto y datos."
     tools: ["Desarrollo web", "Software libre", "Tecnología cívica"]
 
 - id: EXP-06

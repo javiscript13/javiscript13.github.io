@@ -5,7 +5,7 @@ title: "Bufete502: Google Workspace Recovery"
 order: 24
 category: business-systems
 tags: ["Google Workspace", "DNS"]
-visibility: public   # featured | public | archive | private (archive/private also need published: false)
+visibility: public   # public | archive | private (archive/private also need published: false)
 featured: 3   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = after them
 year:
 client: "Bufete502"

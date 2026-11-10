@@ -6,7 +6,7 @@ order: 3
 category: data-analytics
 tags: ["React", "Django", "ESP32", "C++"]
 capabilities: [data-software]   # ids from _data/services.yml; only where documented
-visibility: public   # featured | public | archive | private (archive/private also need published: false)
+visibility: public   # public | archive | private (archive/private also need published: false)
 featured: 1   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = after them
 year:
 client:

@@ -5,11 +5,11 @@ meta_description: "Technology & Business Process Consultant. I help organization
 ---
 {% comment %}
   Home: 1 Hero, 2 What I do, 3 Work (every public project, filterable), 4 About preview, 5 Contact.
-  Work lists the _portfolios records whose visibility is `public` (or `featured`), ordered by their
+  Work lists the _portfolios records whose visibility is `public`, ordered by their
   `featured` rank (1, then 2, then 3, then the ones without a rank), and by `order` within each rank.
   There is no separate /work/ page.
 {% endcomment %}
-{% assign all_projects = site.portfolios | where_exp: "p", "p.visibility == 'featured' or p.visibility == 'public'" | sort: "order" %}
+{% assign all_projects = site.portfolios | where: "visibility", "public" | sort: "order" %}
 {% assign rank1 = all_projects | where_exp: "p", "p.featured == 1" %}
 {% assign rank2 = all_projects | where_exp: "p", "p.featured == 2" %}
 {% assign rank3 = all_projects | where_exp: "p", "p.featured == 3" %}
@@ -41,7 +41,7 @@ meta_description: "Technology & Business Process Consultant. I help organization
             <h4 class="what-item-title">{{ service.title | escape }}</h4>
             <p class="what-item-text">{{ service.summary }}</p>
             {% comment %} Evidence: projects that declare this capability (same records as the Work section), or the experiences listed in services.yml. {% endcomment %}
-            {% assign evidence = site.portfolios | where_exp: "p", "p.visibility == 'featured' or p.visibility == 'public'" | where_exp: "p", "p.capabilities contains service.id" | sort: "order" %}
+            {% assign evidence = site.portfolios | where: "visibility", "public" | where_exp: "p", "p.capabilities contains service.id" | sort: "order" %}
             {% if evidence.size > 0 or service.experiences.size > 0 %}
             <p class="what-item-evidence">{% if evidence.size > 0 %}Selected projects: {% for project in evidence limit: 3 %}<a href="{{ project.url | relative_url }}">{{ project.title | split: ': ' | last }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% else %}Selected projects: {% for exp_id in service.experiences %}{% assign exp = site.data.experiences | where: "id", exp_id | first %}<a href="{{ '/about/' | relative_url }}#{{ exp_id | downcase }}">{{ exp.organization | split: ' (' | first }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>
             {% endif %}

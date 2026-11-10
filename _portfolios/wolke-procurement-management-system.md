@@ -5,7 +5,7 @@ title: "Wolke Solutions: Procurement Management System"
 category: business-systems
 tags: ["Requirements analysis", "Project management", "Approval workflows"]
 capabilities: [process-analysis]   # ids from _data/services.yml; only where documented
-visibility: public   # featured | public | archive | private (archive/private also need published: false)
+visibility: public   # public | archive | private (archive/private also need published: false)
 featured: 1   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = after them
 year:
 client:

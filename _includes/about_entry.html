@@ -4,7 +4,7 @@
   Linked projects are looked up by parent_type + parent_id; they are never copied here.
 {% endcomment %}
 {% assign entry = include.entry %}
-{% assign linked = site.portfolios | where_exp: "p", "p.visibility == 'featured' or p.visibility == 'public'" | where: "parent_type", include.type | where: "parent_id", entry.id | sort: "order" %}
+{% assign linked = site.portfolios | where: "visibility", "public" | where: "parent_type", include.type | where: "parent_id", entry.id | sort: "order" %}
 <div class="about-entry row" id="{{ entry.id | downcase }}">
 	<div class="col-md-3">
 		<span class="about-entry-period">{% if include.type == 'experience' %}{{ entry.start }} – {{ entry.end }}{% else %}{{ entry.period }}{% endif %}</span>

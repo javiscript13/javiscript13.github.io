@@ -28,15 +28,14 @@ Projects without a `thumbnail` get a graphic cover on cards (`_includes/project_
 
 **Visibility** (single field):
 
-| Value | Home | Work | Page generated |
-|---|---|---|---|
-| `featured` | yes (at most 4, ordered by `order`) | yes | yes |
-| `public` | no | yes | yes |
-| `archive` | no | no | no |
-| `private` | no | no | no |
+| Value | Work (Home) | Page generated |
+|---|---|---|
+| `public` | yes, ordered by its `featured` rank (1, 2, 3) and then `order` | yes |
+| `archive` | no | no |
+| `private` | no | no |
 
 **Every `archive` or `private` project must also have `published: false`** (that is what stops Jekyll from generating its page). `noindex` is not a privacy measure, and files in `_portfolios/` live in this repository: do not put confidential information in them.
-Work lists every `featured` and `public` project in one grid ordered by `order`; the category buttons filter that grid (Shuffle, as in the original site).
+The category buttons filter the Work grid (Shuffle, as in the original site). GitHub Pages builds with Jekyll 3.10, so avoid Jekyll 4-only features such as `and`/`or` inside `where_exp`.
 
 **Availability** (what the project page says about where the work can be seen):
 - `availability: online` + `website: <verified live URL>`

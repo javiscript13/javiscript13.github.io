@@ -8,7 +8,7 @@
   {% comment %} Meta description is always plain text: short_description, else description without HTML, else the site description. {% endcomment %}
   {% assign meta_description = page.meta_description | default: page.short_description | default: page.description | default: site.description %}
   <meta name="description" content="{{ meta_description | strip_html | strip_newlines | normalize_whitespace | truncate: 160 | escape }}">
-  {% if page.noindex or page.visibility and page.visibility != 'featured' and page.visibility != 'public' %}
+  {% if page.noindex or page.visibility and page.visibility != 'public' %}
   <meta name="robots" content="noindex, nofollow">
   {% endif %}
   

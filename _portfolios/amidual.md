@@ -5,7 +5,7 @@ title: "Amidual"
 order: 9
 category: business-systems
 tags: ["Customization and Installation", "Learning Platforms"]
-visibility: public   # featured | public | archive | private (archive/private also need published: false)
+visibility: public   # public | archive | private (archive/private also need published: false)
 featured: 2   # 1, 2 or 3: shows first in Work (1 before 2 before 3); empty = after them
 year:
 client:

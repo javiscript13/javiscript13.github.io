@@ -71,7 +71,7 @@ Shown on About; a project links to one with `parent_type: experience|collaborati
 
 ### Other data
 - `_data/categories.yml`: the four project categories (name, description) used by the Work filters and cards.
-- `_data/services.yml`: the three main service areas (title + summary shown in Home's "What I do"). `description` and the complementary capabilities are kept as reference copy but not rendered.
+- `_data/services.yml`: the three main service areas (title + summary shown in Home's "What I do"). The complementary capabilities are kept as reference copy but not rendered.
 - `_data/skills.yml`, `_data/experiences.yml`, `_data/collaborations.yml` and `_includes/about_entry.html`: kept as content/reference data. About is now a short narrative and does not render them; project pages still show their "Experience"/"Collaboration" name from the first two.
 - `_data/navigation.yml`: the menu items (`key` is the label in `_data/i18n.yml`, `url` the English URL).
 - `_data/i18n.yml`: interface texts in English and Spanish (see Languages).

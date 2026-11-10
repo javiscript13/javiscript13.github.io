@@ -1,6 +1,6 @@
 # Single source for the three main service areas shown on Home ("What I do": title + summary).
-# `description` and the `complementary` capabilities are kept as reference content for
-# projects / About copy; they are not rendered on their own page any more.
+# The `complementary` capabilities are kept as reference content for projects / About copy;
+# they are not rendered.
 #
 # Wording is limited to what is documented in the experience/project records
 # (see _data/experiences.yml and the projects in _portfolios/). Supporting evidence
@@ -13,16 +13,15 @@
 #   - Digital workplace: Google Workspace setup/migration work in the project database.
 #   - Learning platforms: Amidual (Chamilo), EXP-06, EXP-08 (educational platforms, Moodle).
 #
-# Fields: title (shown everywhere), summary (short, About), description (Services page),
-#         icon (Themify icon class, About cards).
-#         es (Spanish `title` and `summary`, the two fields that are rendered; `description` and the
-#         `complementary` list are reference copy and are not translated).
+# Fields: title (Home and the capability label on project pages), summary (Home),
+#         icon (Themify icon class).
+#         es (Spanish `title` and `summary`; the `complementary` list is reference copy
+#         and is not translated).
 main:
   - id: process-analysis
     title: "Process and Operations Optimization"
     icon: "ti-bar-chart-alt"
     summary: "Identifying bottlenecks, simplifying tasks, improving workflows, and reducing manual work."
-    description: "I help organizations understand how a process works today and turn that understanding into clear requirements and practical improvements. My experience includes organizing and routing operational incidents and integrating Excel and SAP data in a retail operations context, leading a procurement management software project from client requirements to delivery follow-up, and building a business management system for a pharmaceutical distributor's inventory, orders and invoicing."
     es:
       title: "Optimización de procesos y operaciones"
       summary: "Identificar cuellos de botella, simplificar tareas, mejorar flujos de trabajo y reducir el trabajo manual."
@@ -33,7 +32,6 @@ main:
     title: "Digital Solutions and Management Systems"
     icon: "ti-layers"
     summary: "Turning operational needs into tools that make organizations work more effectively."
-    description: "I help organizations decide what technology they need and how to put it in place: clarifying the need, setting priorities, choosing between adapting an existing platform and building something custom, and coordinating delivery. My experience includes acting as technical advisor between a ministry's leadership, its IT department and an external team; leading technology at a civic technology organization; and coordinating three to four software projects with a team of two developers as a project manager."
     es:
       title: "Soluciones digitales y sistemas de gestión"
       summary: "Convertir necesidades operativas en herramientas que faciliten el trabajo de las organizaciones."
@@ -42,7 +40,6 @@ main:
     title: "Data Integration and Utilization"
     icon: "ti-pie-chart"
     summary: "Connecting information from different sources and turning it into useful insights for management and decision-making."
-    description: "I integrate data from different systems and spreadsheets, clean and transform it, and make it understandable through reports and interactive visualizations, and I implement the software around it, from data collection to the interface people use. My work includes integration scripts for a ministry's systems and Excel files, D3.js visualizations of electoral and judicial data, a citizen-science platform that collects sensor data from IoT stations, and full-stack applications built with Django, React and Express.js."
     es:
       title: "Integración y aprovechamiento de datos"
       summary: "Conectar información de distintas fuentes y convertirla en insumos útiles para la gestión y la toma de decisiones."

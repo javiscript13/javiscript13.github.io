@@ -28,6 +28,6 @@ es:
   role: "Alaveteli; personalización"
   short_description: "Plataforma para gestionar solicitudes de información pública a municipalidades de Guatemala."
   description: |-
-    <p>Infotepequez fue una plataforma para dar seguimiento a las solicitudes de información pública hechas a municipalidades de Guatemala.</p>
+    <p>Infotepequez fue una plataforma para dar seguimiento a las solicitudes de acceso a la información dirigidas a municipalidades de Guatemala.</p>
     <p>El proyecto se basó en Alaveteli, una plataforma de código abierto para solicitudes de acceso a la información. Personalicé la plataforma con plantillas de Ruby on Rails mientras trabajaba en Guatecambia.</p>
 ---

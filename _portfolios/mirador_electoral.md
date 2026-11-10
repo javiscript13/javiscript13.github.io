@@ -18,6 +18,7 @@ description: |-
 thumbnail: "/assets/images/portfolio/miradorElec1.png"
 images:
   - "/assets/images/portfolio/miradorElec2.png"
+  - "/assets/images/portfolio/miradorElec3.png"
 website:
 repository: "https://github.com/Guatecambia/miradorelectoral"
 availability: offline   # online | offline | private | device

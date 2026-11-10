@@ -83,6 +83,11 @@ layout: default
 			{{ component.description }}
 			{% include project_links.html website=component.website repository=component.repository availability=component.availability availability_note=component.availability_note repository_note=component.repository_note %}
 		</section>
+		{% if component.image %}
+		<div class="project-gallery">
+			<img alt="{{ component.title | escape }}" src="{{ component.image | relative_url }}">
+		</div>
+		{% endif %}
 		{% endfor %}
 		{% else %}
 		<div class="project-body">

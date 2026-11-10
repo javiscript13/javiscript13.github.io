@@ -21,4 +21,12 @@ repository: "https://github.com/Guatecambia/ddah-congresoabierto"
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-05
+# Spanish version (page /es/portfolios/congreso-abierto-del-dicho-al-hecho). Fields left out stay as in English.
+es:
+  title: "Congreso Abierto con Del Dicho al Hecho"
+  tags: ["Django", "Software libre"]
+  role: "Adaptación de software libre"
+  short_description: "Adaptación de una plataforma de código abierto que sirvió de base para la iniciativa Del Dicho al Hecho / Congreso Abierto."
+  description: |-
+    <p>Adapté una plataforma de código abierto existente para la iniciativa Del Dicho al Hecho en Guatecambia. Ese trabajo formó parte del esfuerzo que después evolucionó en Congreso Abierto.</p>
 ---

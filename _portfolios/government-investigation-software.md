@@ -24,4 +24,13 @@ availability_note: "Private application of the organization."
 repository_note: "Not open source."
 parent_type: experience
 parent_id: EXP-07
+# Spanish version (page /es/portfolios/government-investigation-software). Fields left out stay as in English.
+es:
+  title: "Software de investigación gubernamental"
+  short_description: "Aplicación web creada para apoyar y gestionar procesos de investigación criminal del Ministerio Público de Guatemala."
+  description: |-
+    <p>Trabajé como desarrollador full-stack en un equipo que construyó una aplicación web de investigación criminal para el Ministerio Público de Guatemala.</p>
+    <p>El proyecto fue patrocinado por JES y se desarrolló en estrecha colaboración con el Ministerio Público para reemplazar el sistema que la institución tenía. Trabajé en toda la aplicación con el stack SERN: React, Express.js y tecnologías relacionadas.</p>
+  availability_note: "Aplicación privada de la institución."
+  repository_note: "No es de código abierto."
 ---

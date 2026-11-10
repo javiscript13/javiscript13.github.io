@@ -1,22 +1,35 @@
 # Primary project categories. The order here is the order of the filters of the Work section on Home.
 # `id` is the value used in a project's `category:`. `icon` is a Themify icon class,
 # `description` is the short text shown when a category is selected in the Work section.
+# `es:` holds the Spanish `name` and `description` (shown under /es/).
 - id: digital-presence
   name: Digital Presence & Web Experiences
   icon: ti-world
   description: "Websites and web experiences that present an organization or initiative."
+  es:
+    name: "Presencia digital y experiencias web"
+    description: "Sitios y experiencias web que presentan a una organización o iniciativa."
 
 - id: business-systems
   name: Business Systems & Digital Operations
   icon: ti-settings
   description: "Systems and processes that support how an organization runs day to day."
+  es:
+    name: "Sistemas de negocio y operaciones digitales"
+    description: "Sistemas y procesos que sostienen el funcionamiento diario de una organización."
 
 - id: data-analytics
   name: Data, Analytics & Connected Systems
   icon: ti-bar-chart-alt
   description: "Data collection, integration and visualization, including connected devices."
+  es:
+    name: "Datos, analítica y sistemas conectados"
+    description: "Recopilación, integración y visualización de datos, incluidos dispositivos conectados."
 
 - id: government-civic
   name: Government & Civic Technology
   icon: ti-shield
   description: "Work in the public interest: transparency, public information and civic participation. It is a field of application, so it spans different types of solution."
+  es:
+    name: "Gobierno y tecnología cívica"
+    description: "Trabajo de interés público: transparencia, información pública y participación ciudadana. Es un ámbito de aplicación, por lo que abarca distintos tipos de solución."

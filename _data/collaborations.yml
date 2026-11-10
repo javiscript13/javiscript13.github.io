@@ -8,21 +8,30 @@
 # Texts are an English translation of the original (Spanish) records and are pending
 # the author's review.
 #
-# Fields: id, name, period, description, visibility (only `public` entries are shown).
+# Fields: id, name, period, description, visibility (only `public` entries are shown),
+#         es (Spanish version of the text fields; what is left out stays as in English).
 - id: COL-01
   name: "LiteFarm"
   period: "2023 (approximately one year)"
   description: "Open source; full-stack with Express.js and React; international team and meetings in English; ticket-based work and bug fixing."
   visibility: public
+  es:
+    period: "2023 (aproximadamente un año)"
+    description: "Código abierto; full-stack con Express.js y React; equipo internacional y reuniones en inglés; trabajo basado en tickets y corrección de errores."
 
 - id: COL-03
   name: "Edulibre"
   period: "May 2009 – Dec 2011"
   description: "Volunteer participation with formal responsibilities; served on the board of directors; set up the first LTSP lab, taught classes to children for several months and coordinated interns for wiki documentation."
   visibility: public
+  es:
+    period: "May 2009 – Dic 2011"
+    description: "Participación voluntaria con responsabilidades formales; integré la junta directiva; monté el primer laboratorio LTSP, di clases a niños durante varios meses y coordiné practicantes para la documentación en wiki."
 
 - id: COL-04
   name: "DIGI"
   period: "May 2014 – Sep 2014"
   description: "Volunteer participation as a programmer on the Tz'utujil language learning project."
   visibility: public
+  es:
+    description: "Participación voluntaria como programador en el proyecto de aprendizaje del idioma tz'utujil."

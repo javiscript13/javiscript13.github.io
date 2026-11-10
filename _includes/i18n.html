@@ -1,0 +1,20 @@
+{% comment %}
+  Language context. Include it once at the top of every layout: it sets
+    lang         "en" (default) or "es" (front matter `lang: es`)
+    t            the UI texts of that language (_data/i18n.yml)
+    lang_prefix  "" or "/es": prepend it to internal links
+    url_en / url_es  this page in each language (language switcher, hreflang)
+  Translated content (data records and projects) carries an `es:` block; read a field with
+  {{ record[lang].field | default: record.field }} so anything untranslated falls back to English.
+{% endcomment %}
+{% assign lang = page.lang | default: "en" %}
+{% assign t = site.data.i18n[lang] %}
+{% if lang == "es" %}
+  {% assign lang_prefix = "/es" %}
+  {% assign url_en = page.url | remove_first: "/es" %}
+  {% assign url_es = page.url %}
+{% else %}
+  {% assign lang_prefix = "" %}
+  {% assign url_en = page.url %}
+  {% assign url_es = page.url | prepend: "/es" %}
+{% endif %}

@@ -26,4 +26,13 @@ availability: online   # online | offline | private | device
 repository_note: "The visualization code is not public."
 parent_type: experience
 parent_id: EXP-08
+# Spanish version (page /es/portfolios/mirador_judicial). Fields left out stay as in English.
+es:
+  title: "Mirador Judicial"
+  role: "Visualización de datos"
+  short_description: "Visualizaciones interactivas de datos sobre el sistema de justicia de Guatemala."
+  description: |-
+    <p>Mirador Judicial presenta visualizaciones de datos desarrolladas para una investigación sobre el sistema de justicia de Guatemala.</p>
+    <p>Mi rol fue transformar los hallazgos de la investigación en visualizaciones interactivas con D3.js. La investigación estuvo a cargo del Instituto de Estudios Comparados en Ciencias Penales de Guatemala (ICCPG).</p>
+  repository_note: "El código de las visualizaciones no es público."
 ---

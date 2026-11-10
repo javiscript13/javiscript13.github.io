@@ -20,4 +20,11 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-10
+# Spanish version (page /es/portfolios/funjose-google-workspace-setup). Fields left out stay as in English.
+es:
+  title: "FUNJOSE: implementación de Google Workspace"
+  role: "Implementador"
+  short_description: "Implementación de Google Workspace y configuración de cuentas para FUNJOSE."
+  description: |-
+    <p>Configuré Google Workspace para FUNJOSE: el entorno de correo de la organización y las cuentas de usuario que apoyan su comunicación y colaboración diarias.</p>
 ---

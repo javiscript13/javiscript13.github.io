@@ -21,4 +21,12 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-03
+# Spanish version (page /es/portfolios/joomla-components-plugins-medical-education). Fields left out stay as in English.
+es:
+  title: "Componentes y plugins de Joomla para un proyecto de educación médica"
+  role: "Implementador"
+  short_description: "Componentes y plugins de Joomla a la medida para contenido educativo y acceso por membresía."
+  description: |-
+    <p>Desarrollé componentes y plugins de Joomla para una iniciativa de educación médica. Las herramientas permitían publicar material educativo basado en artículos y publicaciones científicas, y gestionar membresías para controlar el acceso al contenido de médicos en Estados Unidos que necesitaban créditos de educación médica continua.</p>
+    <p>El cliente instaló y usó los componentes en varios sitios web.</p>
 ---

@@ -21,4 +21,10 @@ repository: "https://github.com/Guatecambia/CongresoTransparente"
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-05
+# Spanish version (page /es/portfolios/congreso-transparente). Fields left out stay as in English.
+es:
+  role: "Mantenimiento; desarrollo web"
+  short_description: "Recuperación y reinstalación de un sitio web de transparencia abandonado, seguidas de mantenimiento y modificaciones posteriores."
+  description: |-
+    <p>Recuperé y reinstalé el sitio abandonado de Congreso Transparente mientras trabajaba en Guatecambia; restauré el sitio y le hice las modificaciones posteriores que se necesitaron.</p>
 ---

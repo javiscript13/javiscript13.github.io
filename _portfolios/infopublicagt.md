@@ -20,4 +20,10 @@ repository: "https://github.com/Guatecambia/infopublicagt"
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-05
+# Spanish version (page /es/portfolios/infopublicagt). Fields left out stay as in English.
+es:
+  role: "Desarrollo web"
+  short_description: "Herramienta para verificar el cumplimiento de la información pública que las instituciones deben publicar de oficio."
+  description: |-
+    <p>InfoPublicaGT es una herramienta para verificar el cumplimiento de la información pública de oficio, es decir, la que las instituciones están obligadas a publicar de forma proactiva.</p>
 ---

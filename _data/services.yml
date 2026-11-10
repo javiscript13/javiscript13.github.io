@@ -15,12 +15,17 @@
 #
 # Fields: title (shown everywhere), summary (short, About), description (Services page),
 #         icon (Themify icon class, About cards).
+#         es (Spanish `title` and `summary`, the two fields that are rendered; `description` and the
+#         `complementary` list are reference copy and are not translated).
 main:
   - id: process-analysis
     title: "Business Process Analysis & Improvement"
     icon: "ti-bar-chart-alt"
     summary: "Understanding how organizations operate, identifying bottlenecks and translating business needs into clearer processes and requirements."
     description: "I help organizations understand how a process works today and turn that understanding into clear requirements and practical improvements. My experience includes organizing and routing operational incidents and integrating Excel and SAP data in a retail operations context, leading a procurement management software project from client requirements to delivery follow-up, and building a business management system for a pharmaceutical distributor's inventory, orders and invoicing."
+    es:
+      title: "Análisis y mejora de procesos de negocio"
+      summary: "Entender cómo operan las organizaciones, identificar cuellos de botella y traducir las necesidades del negocio en procesos y requerimientos más claros."
 
   - id: technology-consulting
     # No project card documents this capability on its own; it is backed by these experiences (see About).
@@ -29,12 +34,18 @@ main:
     icon: "ti-layers"
     summary: "Evaluating organizational needs and shaping technology solutions, from defining requirements and selecting tools to coordinating implementation."
     description: "I help organizations decide what technology they need and how to put it in place: clarifying the need, setting priorities, choosing between adapting an existing platform and building something custom, and coordinating delivery. My experience includes acting as technical advisor between a ministry's leadership, its IT department and an external team; leading technology at a civic technology organization; and coordinating three to four software projects with a team of two developers as a project manager."
+    es:
+      title: "Consultoría tecnológica y diseño de soluciones"
+      summary: "Evaluar las necesidades de la organización y dar forma a soluciones tecnológicas, desde definir requerimientos y seleccionar herramientas hasta coordinar la implementación."
 
   - id: data-software
     title: "Data Integration, Visualization & Software Implementation"
     icon: "ti-pie-chart"
     summary: "Connecting information across systems, transforming data into useful insights, and building or implementing software to support real-world needs."
     description: "I integrate data from different systems and spreadsheets, clean and transform it, and make it understandable through reports and interactive visualizations, and I implement the software around it, from data collection to the interface people use. My work includes integration scripts for a ministry's systems and Excel files, D3.js visualizations of electoral and judicial data, a citizen-science platform that collects sensor data from IoT stations, and full-stack applications built with Django, React and Express.js."
+    es:
+      title: "Integración y visualización de datos e implementación de software"
+      summary: "Conectar información entre sistemas, transformar datos en información útil y desarrollar o implementar software que responda a necesidades reales."
 
 complementary:
   - id: digital-workplace

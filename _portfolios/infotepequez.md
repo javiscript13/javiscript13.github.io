@@ -22,4 +22,12 @@ repository: "https://github.com/Guatecambia/publitopia-alaveteli-theme"
 availability: offline   # online | offline | private | device
 parent_type: experience
 parent_id: EXP-05
+# Spanish version (page /es/portfolios/infotepequez). Fields left out stay as in English.
+es:
+  tags: ["Personalización e instalación", "Plantillas de Rails"]
+  role: "Alaveteli; personalización"
+  short_description: "Plataforma para gestionar solicitudes de información pública a municipalidades de Guatemala."
+  description: |-
+    <p>Infotepequez fue una plataforma para dar seguimiento a las solicitudes de información pública hechas a municipalidades de Guatemala.</p>
+    <p>El proyecto se basó en Alaveteli, una plataforma de código abierto para solicitudes de acceso a la información. Personalicé la plataforma con plantillas de Ruby on Rails mientras trabajaba en Guatecambia.</p>
 ---

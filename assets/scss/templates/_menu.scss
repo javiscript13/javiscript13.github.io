@@ -30,6 +30,85 @@
   font-family: $nav-font;
 }
 
+// Language switcher (EN | ES): a small pill in the header, always visible.
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px;
+  border: 1px solid rgba($white, .28);
+  border-radius: 999px;
+  font-family: $nav-font;
+  line-height: 1;
+
+  @include desktop {
+    margin-right: 6px;   // small screens: sits next to the menu button
+  }
+
+  .lang-switch-option {
+    padding: 6px 11px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    color: rgba($white, .72);
+    transition: color .2s ease, background-color .2s ease;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $primary-color;
+      outline-offset: 2px;
+    }
+
+    &.is-active {
+      background: $white;
+      color: $secondary-color;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .lang-switch {
+    margin-left: 14px !important;   // after the menu, which already takes the free space
+  }
+}
+
+// Phones: logo, language switcher and menu button share one row, so the last two get tighter.
+@media (max-width: 575px) {
+  #main-nav .navbar-brand {
+    margin-right: 8px;
+  }
+
+  #main-nav button.navbar-toggler {
+    padding: 4px 6px;
+
+    span.navbar-toggler {
+      padding: 0;
+    }
+  }
+
+  .lang-switch {
+    margin-right: 2px;
+
+    .lang-switch-option {
+      padding: 5px 8px;
+      font-size: 11px;
+      letter-spacing: .4px;
+    }
+  }
+}
+
+// Very narrow phones (320px): a slightly smaller logo keeps everything on that row.
+@media (max-width: 349px) {
+  #main-nav .navbar-brand {
+    font-size: 32px;
+  }
+}
+
 nav.fixed-top {
   background: $secondary-color;
   transition: .0s all ease;

@@ -21,4 +21,11 @@ repository: "https://github.com/cidi-gt/RendicionDeCuentas"
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: 
 parent_id: 
+# Spanish version (page /es/portfolios/compras-visibles-comprasspider). Fields left out stay as in English.
+es:
+  client: "Proyecto personal independiente"
+  role: "Implementador"
+  short_description: "Un crawler y una plataforma de visualización para los datos de compras públicas de Guatemala."
+  description: |-
+    <p>Un crawler en Scrapy que extrae datos de Guatecompras para alimentar la base de datos, y una plataforma en Django y D3.js que visualiza los datos de compras públicas: categorías por institución, cantidades y proveedores.</p>
 ---

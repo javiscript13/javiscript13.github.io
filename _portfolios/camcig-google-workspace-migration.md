@@ -20,4 +20,11 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-10
+# Spanish version (page /es/portfolios/camcig-google-workspace-migration). Fields left out stay as in English.
+es:
+  title: "CAMCIG: migración a Google Workspace"
+  role: "Implementador"
+  short_description: "Migración de un sistema de correo que no funcionaba a Google Workspace."
+  description: |-
+    <p>Migré el entorno de correo de CAMCIG a Gmail y Google Workspace tras los problemas con su sistema de correo anterior. El trabajo incluyó configurar cuentas y permisos, trasladar el correo histórico cuando fue posible y organizar un archivo digital.</p>
 ---

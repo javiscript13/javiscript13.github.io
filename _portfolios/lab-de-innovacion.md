@@ -21,4 +21,10 @@ repository: "https://github.com/Guatecambia/labInnovacion"
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-05
+# Spanish version (page /es/portfolios/lab-de-innovacion). Fields left out stay as in English.
+es:
+  role: "Desarrollo web"
+  short_description: "Plataforma de participación ciudadana para explorar obras públicas y recoger la opinión de la ciudadanía."
+  description: |-
+    <p>Plataforma web desarrollada en Guatecambia para poner a disposición de la ciudadanía información sobre obras públicas y permitirle calificar y comentar los proyectos de forma anónima.</p>
 ---

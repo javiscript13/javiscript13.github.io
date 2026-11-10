@@ -1,33 +1,22 @@
 <ul class="navbar-nav ml-auto text-center">
   {% for link in site.data.navigation.main %}
   {% assign active = nil %}
+  {% assign link_url = lang_prefix | append: link.url %}
 
-  {% comment %} "/" only matches the home page itself; other items match by URL prefix. {% endcomment %}
+  {% comment %} Home only matches the home page itself; other items match by URL prefix. {% endcomment %}
   {% if link.url == '/' %}
-    {% if page.path == 'index.html' %}{% assign active = 'active' %}{% endif %}
-  {% elsif page.url contains link.url %}
+    {% if page.url == link_url %}{% assign active = 'active' %}{% endif %}
+  {% elsif page.url contains link_url %}
     {% assign active = 'active' %}
   {% endif %}
 
   {% for prefix in link.match %}
-    {% if page.url contains prefix %}{% assign active = 'active' %}{% endif %}
+    {% assign prefix_url = lang_prefix | append: prefix %}
+    {% if page.url contains prefix_url %}{% assign active = 'active' %}{% endif %}
   {% endfor %}
 
-  {% for sublink in link.submenu %}
-    {% if page.url contains sublink.url %}{% assign active = 'active' %}{% endif %}
-  {% endfor %}
-
-  <li class="nav-item {{ active }} {% if link.submenu %} dropdown {% endif %}">
-    <a class="nav-link" {% if link.submenu %} data-toggle="dropdown"
-      {% endif %} href="{{link.url | relative_url}}">{{link.name}}{% if link.submenu %}<i
-        class="ti-angle-down ml-2"></i>{% endif %}</a>
-    {% if link.submenu %}
-    <ul class="sub-menu dropdown-menu">
-      {% for sublink in link.submenu %}
-      <li><a class="dropdown-item" href="{{sublink.url |relative_url}}">{{sublink.name}}</a></li>
-      {% endfor %}
-    </ul>
-    {% endif %}
+  <li class="nav-item {{ active }}">
+    <a class="nav-link" href="{{ link_url | relative_url }}">{{ t.nav[link.key] | default: link.name }}</a>
   </li>
   {% endfor %}
 </ul>

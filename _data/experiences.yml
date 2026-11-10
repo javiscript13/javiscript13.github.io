@@ -10,6 +10,8 @@
 #
 # Fields: id, organization, role, start, end, current (optional), description,
 #         tools (optional list), visibility (only `public` entries are shown).
+#         es (Spanish version of any of the text fields; what is left out stays as in English,
+#         e.g. a month that is written the same or the name of an organization).
 - id: EXP-01
   organization: "Outsource Empresarial (service for ExxonMobil)"
   role: "US Drystock Logistics Analyst; Process Improvement Specialist"
@@ -18,6 +20,13 @@
   description: "Working through Outsource Empresarial on a service for ExxonMobil related to operations and incidents: integration of Excel files from retail stores in the US with SAP tables downloaded from Guatemala, and organization and classification of item-configuration incidents so they reached the responsible departments."
   tools: ["Excel", "SAP as a data source"]
   visibility: public
+  es:
+    organization: "Outsource Empresarial (servicio para ExxonMobil)"
+    role: "Analista de logística US Drystock; especialista en mejora de procesos"
+    start: "Jul 2009"
+    end: "Ene 2011"
+    description: "Trabajo a través de Outsource Empresarial en un servicio para ExxonMobil relacionado con operaciones e incidentes: integración de archivos de Excel de tiendas minoristas en EE. UU. con tablas de SAP descargadas desde Guatemala, y organización y clasificación de incidentes de configuración de artículos para que llegaran a los departamentos responsables."
+    tools: ["Excel", "SAP como fuente de datos"]
 
 - id: EXP-02
   organization: "TPP eMarketing"
@@ -27,6 +36,11 @@
   description: "Web development with PHP, ActionScript 2/3, Joomla layout work, and development/adaptation of games. Adapted existing code of a Formula 1 game for an advertising client."
   tools: ["PHP", "ActionScript 2/3", "Joomla"]
   visibility: public
+  es:
+    role: "Desarrollo web"
+    start: "Feb 2011"
+    end: "Ene 2012"
+    description: "Desarrollo web con PHP, ActionScript 2/3, maquetación en Joomla y desarrollo y adaptación de juegos. Adapté el código existente de un juego de Fórmula 1 para un cliente publicitario."
 
 - id: EXP-03
   organization: "Freelance / technology projects"
@@ -36,6 +50,10 @@
   description: "Web development."
   tools: ["Joomla"]
   visibility: public
+  es:
+    organization: "Freelance / proyectos de tecnología"
+    role: "Consultor / desarrollador independiente"
+    description: "Desarrollo web."
 
 - id: EXP-04
   organization: "Wolke Solutions"
@@ -45,6 +63,11 @@
   description: "Coordination of 3–4 projects with a team of two developers; client meetings, requirements gathering, software explanation and training, estimates, priorities, deliveries, light task assignment, deployment to production and validation. Projects included a procurement management system built from a client's real purchasing processes."
   tools: ["Project management", "Requirements analysis", "Development coordination"]
   visibility: public
+  es:
+    role: "Gerente de proyectos"
+    end: "Abr 2016"
+    description: "Coordinación de 3 a 4 proyectos con un equipo de dos desarrolladores; reuniones con clientes, levantamiento de requerimientos, explicación del software y capacitación, estimaciones, prioridades, entregas, asignación ligera de tareas, despliegue a producción y validación. Entre los proyectos hubo un sistema de gestión de compras construido a partir de los procesos reales de compras de un cliente."
+    tools: ["Gestión de proyectos", "Análisis de requerimientos", "Coordinación de desarrollo"]
 
 - id: EXP-05
   organization: "Guatecambia"
@@ -54,6 +77,11 @@
   description: "The only person dedicated to technology and programming, with cross-cutting responsibilities: development, site recovery, free software customization, platform implementation, training, civic technology, open government and data."
   tools: ["Web development", "Free software", "Civic technology"]
   visibility: public
+  es:
+    role: "Encargado de tecnología y programación"
+    end: "Ago 2019"
+    description: "La única persona dedicada a tecnología y programación, con responsabilidades transversales: desarrollo, recuperación de sitios, personalización de software libre, implementación de plataformas, capacitación, tecnología cívica, gobierno abierto y datos."
+    tools: ["Desarrollo web", "Software libre", "Tecnología cívica"]
 
 - id: EXP-06
   organization: "Radio Sónica"
@@ -63,6 +91,10 @@
   description: "Implementation and customization of Chamilo for the AMI Dual course (Media and Information Literacy), in a blended format."
   tools: ["Chamilo"]
   visibility: public
+  es:
+    role: "Implementación de plataforma educativa"
+    end: "Ene 2020"
+    description: "Implementación y personalización de Chamilo para el curso AMI Dual (Alfabetización Mediática e Informacional), en modalidad semipresencial."
 
 - id: EXP-07
   organization: "Justice Education Society (JES)"
@@ -72,6 +104,11 @@
   description: "Participation as a full-stack developer in a software team for Guatemala's Public Ministry. Work on backend, frontend, partial GitLab configuration, contribution to a code generator and bug fixing."
   tools: ["Full-stack development", "Backend", "Frontend", "GitLab"]
   visibility: public
+  es:
+    role: "Desarrollador full-stack"
+    end: "Dic 2020"
+    description: "Participación como desarrollador full-stack en un equipo de software para el Ministerio Público de Guatemala. Trabajo en backend, frontend, configuración parcial de GitLab, aporte a un generador de código y corrección de errores."
+    tools: ["Desarrollo full-stack", "Backend", "Frontend", "GitLab"]
 
 - id: EXP-08
   organization: "Freelance / technology projects"
@@ -81,6 +118,12 @@
   description: "One-off implementations, maintenance of educational platforms, assignments for DW Akademie, data visualization and web application maintenance."
   tools: ["Web development", "LMS", "Data visualization"]
   visibility: public
+  es:
+    organization: "Freelance / proyectos de tecnología"
+    role: "Consultor / desarrollador independiente"
+    start: "Ene 2021"
+    description: "Implementaciones puntuales, mantenimiento de plataformas educativas, encargos para DW Akademie, visualización de datos y mantenimiento de aplicaciones web."
+    tools: ["Desarrollo web", "LMS", "Visualización de datos"]
 
 - id: EXP-09
   organization: "Ministry of Environment (MARN)"
@@ -90,6 +133,11 @@
   description: "Liaison between the Vice Ministry, the IT Department and an external team. Scripts to integrate data from systems and from delegates' Excel files; data transformation and cleaning; coordination of the delivery of CSV files from at least three systems; prioritization with the IT Department; quality review and adaptation of existing reports and visualizations."
   tools: ["Python / scripts", "CSV", "Excel", "Data integration", "Reports"]
   visibility: public
+  es:
+    organization: "Ministerio de Ambiente y Recursos Naturales (MARN)"
+    role: "Asesor técnico del Viceministerio de Ambiente"
+    description: "Enlace entre el Viceministerio, el Departamento de TI y un equipo externo. Scripts para integrar datos de sistemas y de archivos de Excel de los delegados; transformación y limpieza de datos; coordinación de la entrega de archivos CSV de al menos tres sistemas; priorización con el Departamento de TI; revisión de calidad y adaptación de reportes y visualizaciones existentes."
+    tools: ["Python / scripts", "CSV", "Excel", "Integración de datos", "Reportes"]
 
 - id: EXP-10
   organization: "Freelance"
@@ -100,3 +148,8 @@
   description: "Organizational solutions for data management; ongoing independent activity."
   tools: ["Web development", "Servers", "Data management"]
   visibility: public
+  es:
+    role: "Desarrollo web a la medida y configuración de servidores"
+    end: "Actualidad"
+    description: "Soluciones organizacionales para la gestión de datos; actividad independiente en curso."
+    tools: ["Desarrollo web", "Servidores", "Gestión de datos"]

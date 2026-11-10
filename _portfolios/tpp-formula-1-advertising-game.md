@@ -20,4 +20,12 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-02
+# Spanish version (page /es/portfolios/tpp-formula-1-advertising-game). Fields left out stay as in English.
+es:
+  title: "TPP: juego publicitario de Fórmula 1"
+  client: "Cliente publicitario (a través de TPP eMarketing)"
+  role: "Implementador"
+  short_description: "Adaptación de un juego de Fórmula 1 existente para un cliente publicitario."
+  description: |-
+    <p>Adapté código existente en ActionScript 3 de un juego de Fórmula 1 para usarlo en una campaña publicitaria. El trabajo consistió en modificar el juego para cumplir los requerimientos de un cliente atendido por TPP eMarketing.</p>
 ---

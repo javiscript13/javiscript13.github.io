@@ -1,0 +1,127 @@
+---
+layout: default
+---
+{% comment %}
+  Home: 1 Hero, 2 What I do, 3 Work (every public project, filterable), 4 About preview, 5 Contact.
+  Work lists the _portfolios records whose visibility is `public`, ordered by their
+  `featured` rank (1, then 2, then 3, then the ones without a rank), and by `order` within each rank.
+  There is no separate /work/ page.
+  Used by index.html (English) and es/index.html (Spanish): texts come from _data/i18n.yml (`t`)
+  and from the `es:` block of each record.
+{% endcomment %}
+{% include i18n.html %}
+{% assign all_projects = site.portfolios | where: "visibility", "public" | sort: "order" %}
+{% assign rank1 = all_projects | where_exp: "p", "p.featured == 1" %}
+{% assign rank2 = all_projects | where_exp: "p", "p.featured == 2" %}
+{% assign rank3 = all_projects | where_exp: "p", "p.featured == 3" %}
+{% assign unranked = all_projects | where_exp: "p", "p.featured == nil" %}
+{% assign visible = rank1 | concat: rank2 | concat: rank3 | concat: unranked %}
+<div class="main-content">
+
+  <!-- 1. Hero -->
+  <section class="section hero-intro text-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <h1 class="hero-title">{{ t.hero_title }}</h1>
+          <p class="hero-lead">{{ t.hero_lead }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. What I do -->
+  <section class="home-band what-i-do">
+    <div class="container">
+      <h3 class="section-heading">{{ t.what_i_do }}</h3>
+      <div class="row what-i-do-list">
+        {% for service in site.data.services.main %}
+        <div class="col-md-4">
+          <div class="what-item">
+            <span class="what-item-num">{% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}</span>
+            <h4 class="what-item-title">{{ service[lang].title | default: service.title | escape }}</h4>
+            <p class="what-item-text">{{ service[lang].summary | default: service.summary }}</p>
+            {% comment %} Evidence: projects that declare this capability (same records as the Work section), or the experiences listed in services.yml. {% endcomment %}
+            {% assign evidence = site.portfolios | where: "visibility", "public" | where_exp: "p", "p.capabilities contains service.id" | sort: "order" %}
+            {% if evidence.size > 0 or service.experiences.size > 0 %}
+            <p class="what-item-evidence">{{ t.selected_projects }} {% if evidence.size > 0 %}{% for project in evidence limit: 3 %}{% comment %} Short name: the part after "Organization: ", with a capital (Spanish titles are lower case after the colon). {% endcomment %}{% assign evidence_name = project[lang].title | default: project.title | split: ': ' | last %}<a href="{{ lang_prefix | append: project.url | relative_url }}">{{ evidence_name | slice: 0 | upcase }}{{ evidence_name | slice: 1, 200 }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% else %}{% for exp_id in service.experiences %}{% assign exp = site.data.experiences | where: "id", exp_id | first %}<a href="{{ lang_prefix | append: '/about/' | relative_url }}#{{ exp_id | downcase }}">{{ exp[lang].organization | default: exp.organization | split: ' (' | first }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</p>
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Selected work -->
+  <!-- 3. Work -->
+  {% if visible.size > 0 %}
+  <section class="home-section selected-work" id="work">
+    <div class="container">
+      <h3 class="section-heading">{{ t.work_heading }}</h3>
+      <p class="work-intro">{{ t.work_intro }}</p>
+
+      <div class="work-page">
+        <!-- Filters: choose a category to see only its projects. "All" shows everything. -->
+        <div class="work-filters" role="group" aria-label="{{ t.filter_aria }}">
+          <span class="work-filters-label">{{ t.filter_label }}</span>
+          <div class="work-filters-list">
+            <button type="button" class="work-filter is-active" data-filter="all" aria-pressed="true">{{ t.filter_all }}</button>
+            {% for category in site.data.categories %}
+              {% assign category_count = 0 %}
+              {% for project in visible %}{% if project.category == category.id or project.also_in contains category.id %}{% assign category_count = category_count | plus: 1 %}{% endif %}{% endfor %}
+              {% if category_count > 0 %}
+              <button type="button" class="work-filter" data-filter="{{ category.id }}" data-description="{{ category[lang].description | default: category.description | escape }}" aria-pressed="false">{{ category[lang].name | default: category.name | escape }}</button>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% comment %} The count is rewritten by script.js from the data-* templates ([n] total, [shown] on screen). {% endcomment %}
+        <p class="work-status" aria-live="polite" data-all="{{ t.showing_all }}" data-one="{{ t.showing_one }}" data-some="{{ t.showing_some }}"><span class="work-status-count">{% if visible.size > 9 %}{{ t.showing_some | replace: '[shown]', 9 | replace: '[n]', visible.size }}{% else %}{{ t.showing_all | replace: '[n]', visible.size }}{% endif %}</span><span class="work-status-text"></span></p>
+
+        <div class="row work-grid">
+          {% for project in visible %}
+            {% include portfolio_card.html project=project show_category=true grid=true %}
+          {% endfor %}
+        </div>
+
+        {% if visible.size > 9 %}
+        <p class="work-more-wrap text-center"><button type="button" class="work-more">{{ t.load_more }}</button></p>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- 4. About preview -->
+  <section class="home-band about-preview">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3 class="section-heading">{{ t.about_heading }}</h3>
+          <p class="about-preview-text">{{ site.data.profile[lang].intro | default: site.data.profile.intro }}</p>
+          <a href="{{ lang_prefix | append: '/about/' | relative_url }}" class="link-arrow">{{ t.about_more }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Contact invitation -->
+  <section class="home-section contact-invite" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <h3 class="mb-3 section-heading">{{ t.contact_heading }}</h3>
+          <p class="contact-invite-text">{{ t.contact_text }}</p>
+          <p class="contact-invite-cta"><a class="link-arrow" href="mailto:{{ site.email }}">{{ t.contact_cta }}</a></p>
+          <p class="contact-invite-links">
+            {% for social in site.social %}<a class="link-arrow link-arrow--external" href="{{ social.link }}" target="_blank" rel="noopener">{% if social.name == 'linkedin' %}LinkedIn{% elsif social.name == 'github' %}GitHub{% else %}{{ social.name | capitalize }}{% endif %}</a>{% endfor %}
+            {% if site.address and site.address != "" %}<span class="contact-invite-place">{{ site.address }}</span>{% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>

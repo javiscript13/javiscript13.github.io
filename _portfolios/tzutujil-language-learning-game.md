@@ -21,4 +21,11 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-03
+# Spanish version (page /es/portfolios/tzutujil-language-learning-game). Fields left out stay as in English.
+es:
+  title: "Juego para aprender el idioma tz'utujil"
+  role: "Implementador"
+  short_description: "Juego tipo karaoke para aprender el idioma tz'utujil."
+  description: |-
+    <p>Juego tipo karaoke para aprender el idioma tz'utujil con la metodología Heurítmia. Proyecto DIGI 4.8.63.3.58; participé como programador voluntario.</p>
 ---

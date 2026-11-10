@@ -24,4 +24,14 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-09
+# Spanish version (page /es/portfolios/marn-technical-advisor). Fields left out stay as in English.
+es:
+  title: "Ministerio de Ambiente: asesor técnico del Viceministerio de Ambiente"
+  tags: ["Python", "CSV", "Excel", "Integración de datos", "Reportes"]
+  role: "Asesor técnico del Viceministerio de Ambiente"
+  short_description: "Asesoría técnica que conectó al Viceministerio, el Departamento de TI y un equipo externo, con énfasis en integración, calidad y reportes de datos."
+  description: |-
+    <p>Como asesor técnico del Viceministerio de Ambiente, fui el enlace entre el Viceministerio, el Departamento de TI y un equipo técnico externo.</p>
+    <p>Desarrollé scripts para integrar información de sistemas institucionales y de archivos de Excel que llevan los delegados regionales, y transformé y limpié los datos para su uso posterior. También coordiné la entrega de exportaciones en CSV de al menos tres sistemas, ayudé a priorizar solicitudes con el Departamento de TI y revisé reportes y visualizaciones existentes para adaptarlos a las necesidades operativas.</p>
+    <p>Mi rol se centró en conectar fuentes de información, mejorar la consistencia de los datos y coordinar el uso de los sistemas y herramientas de reportes existentes. No desarrollé los sistemas institucionales de base ni creé todas las visualizaciones.</p>
 ---

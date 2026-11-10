@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{% comment %} Page not found, used by 404.html (English) and es/404.html (Spanish). {% endcomment %}
+{% include i18n.html %}
+{% include page_header.html %}
+<section class="section">
+	<div class="container text-center">
+		<p class="mb-4">{{ t.notfound_text }}</p>
+		<a href="{{ lang_prefix | append: '/' | relative_url }}" class="btn btn-primary mr-3 mb-2">{{ t.notfound_home }}</a>
+		<a href="{{ lang_prefix | append: '/#work' | relative_url }}" class="link-arrow mb-2">{{ t.notfound_work }}</a>
+	</div>
+</section>

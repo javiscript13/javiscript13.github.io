@@ -1,0 +1,140 @@
+# Interface texts in each language. Templates read them as {{ t.<key> }} (see _includes/i18n.html).
+# Keep both languages with the same keys. Texts with HTML (hero_title, hero_lead) are printed as is.
+# Content that belongs to a record (projects, categories, services, skills, experiences...) is NOT
+# here: it is translated in an `es:` block inside each record.
+
+en:
+  # Header / language switcher
+  nav:
+    home: "Home"
+    about: "About"
+  toggle_navigation: "Toggle navigation"
+  language: "Language"
+  # Home
+  hero_title: 'I help organizations <span class="text-color">improve how they work</span> by connecting processes, technology, and data.'
+  hero_lead: "I'm Javier Hernandez, a <strong>Technology &amp; Business Process Consultant</strong> based in Guatemala. I help turn organizational challenges into practical improvements through technology and data."
+  what_i_do: "What I do"
+  selected_projects: "Selected projects:"
+  work_heading: "Projects that put technology, data, and practical solutions to work"
+  work_intro: "Selected projects, grouped by the kind of problem they address."
+  filter_aria: "Filter projects by category"
+  filter_label: "Filter by category"
+  filter_all: "All"
+  # [n] = projects in the current filter, [shown] = how many of them are on screen
+  showing_all: "Showing [n] projects"
+  showing_one: "Showing 1 project"
+  showing_some: "Showing [shown] of [n] projects"
+  load_more: "Load more projects"
+  about_heading: "About me"
+  about_more: "More about me"
+  contact_heading: "Get in touch"
+  contact_text: "If you'd like to talk about a project, a technology decision, or a way to improve how your organization works, I'd be glad to hear from you."
+  contact_cta: "Let's talk"
+  # About
+  about_intro:
+    - "My background spans software development, business systems, project coordination and data-driven initiatives. Over the years, I've worked with private companies, public institutions and nonprofit organizations, taking on different roles depending on what each project needed — from building software and improving operational processes to coordinating implementations and connecting data from different sources."
+    - "That variety has shaped how I approach technology: not as an end in itself, but as a way to address real organizational needs. I value understanding the problem first, finding a practical way forward, and making sure the solution works in the context where it will be used."
+  how_i_work: "How I work"
+  how_i_work_text:
+    - "Most of my work starts before the technology: understanding how an organization actually operates, what it needs and what a practical solution would look like. Sometimes that means analyzing a process, sometimes coordinating a team, sometimes writing the scripts or the code that bring data together. My background as a developer is what lets me understand, evaluate and implement the solutions I recommend."
+    - "I'm especially interested in problems where technology has to adapt to a complex real-world process, not the other way around, and in projects that make organizations more efficient, transparent or accessible."
+  technical_background: "Technical Background"
+  professional_experience: "Professional Experience"
+  open_source_volunteering: "Open Source &amp; Volunteering"
+  entry_projects: "Projects:"
+  # Project cards and project pages
+  view_project: "View project &rarr;"
+  go_back: "Go back"
+  capability: "Capability"
+  experience: "Experience"
+  collaboration: "Collaboration"
+  client: "Client"
+  role: "Role"
+  year: "Year"
+  related_projects: "Related Projects"
+  not_available: "This page is not available."
+  source_code: "Source code"
+  on_github: "Available on GitHub"
+  availability: "Availability"
+  no_demo_or_code: "No public demo or source code."
+  online: "Online"
+  offline_text: "No longer available online."
+  device_text: "Deployed in the field; not a web service."
+  not_public_text: "Not publicly available."
+  repo_not_public: "Not public."
+  # Footer
+  footer_about: "about me"
+  footer_contact: "Contact"
+  # 404
+  notfound_text: "You can go back to the home page or browse the projects."
+  notfound_home: "Home"
+  notfound_work: "Work"
+
+es:
+  # Texts that in English come from _config.yml (description, footer_content)
+  site_description: "Ayudo a las organizaciones a mejorar su forma de trabajar mediante tecnología, datos y soluciones digitales prácticas."
+  footer_content: "Consultor en tecnología y procesos de negocio. Ayudo a las organizaciones a mejorar su forma de trabajar mediante tecnología, datos y soluciones digitales prácticas."
+  # Header / language switcher
+  nav:
+    home: "Inicio"
+    about: "Sobre mí"
+  toggle_navigation: "Mostrar u ocultar el menú"
+  language: "Idioma"
+  # Home
+  hero_title: 'Ayudo a las organizaciones a <span class="text-color">mejorar su forma de trabajar</span> conectando procesos, tecnología y datos.'
+  hero_lead: "Soy Javier Hernandez, <strong>consultor en tecnología y procesos de negocio</strong> radicado en Guatemala. Ayudo a convertir los retos de una organización en mejoras prácticas mediante tecnología y datos."
+  what_i_do: "Qué hago"
+  selected_projects: "Proyectos seleccionados:"
+  work_heading: "Proyectos que ponen a trabajar la tecnología, los datos y las soluciones prácticas"
+  work_intro: "Proyectos seleccionados, agrupados según el tipo de problema que atienden."
+  filter_aria: "Filtrar proyectos por categoría"
+  filter_label: "Filtrar por categoría"
+  filter_all: "Todos"
+  showing_all: "Mostrando [n] proyectos"
+  showing_one: "Mostrando 1 proyecto"
+  showing_some: "Mostrando [shown] de [n] proyectos"
+  load_more: "Cargar más proyectos"
+  about_heading: "Sobre mí"
+  about_more: "Más sobre mí"
+  contact_heading: "Contacto"
+  contact_text: "Si desea conversar sobre un proyecto, una decisión tecnológica o una forma de mejorar cómo trabaja su organización, con gusto le escucho."
+  contact_cta: "Conversemos"
+  # About
+  about_intro:
+    - "Mi trayectoria abarca desarrollo de software, sistemas de negocio, coordinación de proyectos e iniciativas basadas en datos. A lo largo de los años he trabajado con empresas privadas, instituciones públicas y organizaciones sin fines de lucro, asumiendo distintos roles según lo que cada proyecto necesitaba: desde desarrollar software y mejorar procesos operativos hasta coordinar implementaciones y conectar datos de distintas fuentes."
+    - "Esa variedad ha moldeado mi forma de ver la tecnología: no como un fin en sí mismo, sino como un medio para atender necesidades reales de las organizaciones. Para mí es importante entender primero el problema, encontrar un camino práctico y asegurar que la solución funcione en el contexto donde se va a usar."
+  how_i_work: "Cómo trabajo"
+  how_i_work_text:
+    - "La mayor parte de mi trabajo empieza antes de la tecnología: entender cómo opera realmente una organización, qué necesita y cómo sería una solución práctica. A veces eso significa analizar un proceso, a veces coordinar un equipo y a veces escribir los scripts o el código que integran los datos. Mi experiencia como desarrollador es lo que me permite entender, evaluar e implementar las soluciones que recomiendo."
+    - "Me interesan especialmente los problemas donde la tecnología tiene que adaptarse a un proceso complejo del mundo real, y no al revés, y los proyectos que hacen a las organizaciones más eficientes, transparentes o accesibles."
+  technical_background: "Conocimientos técnicos"
+  professional_experience: "Experiencia profesional"
+  open_source_volunteering: "Código abierto y voluntariado"
+  entry_projects: "Proyectos:"
+  # Project cards and project pages
+  view_project: "Ver proyecto &rarr;"
+  go_back: "Volver"
+  capability: "Capacidad"
+  experience: "Experiencia"
+  collaboration: "Colaboración"
+  client: "Cliente"
+  role: "Rol"
+  year: "Año"
+  related_projects: "Proyectos relacionados"
+  not_available: "Esta página no está disponible."
+  source_code: "Código fuente"
+  on_github: "Disponible en GitHub"
+  availability: "Disponibilidad"
+  no_demo_or_code: "Sin demo pública ni código fuente público."
+  online: "En línea"
+  offline_text: "Ya no está disponible en línea."
+  device_text: "Desplegado en campo; no es un servicio web."
+  not_public_text: "No disponible públicamente."
+  repo_not_public: "No es público."
+  # Footer
+  footer_about: "sobre mí"
+  footer_contact: "Contacto"
+  # 404
+  notfound_text: "Puede volver al inicio o ver los proyectos."
+  notfound_home: "Inicio"
+  notfound_work: "Proyectos"

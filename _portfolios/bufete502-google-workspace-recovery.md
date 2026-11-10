@@ -20,4 +20,11 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-10
+# Spanish version (page /es/portfolios/bufete502-google-workspace-recovery). Fields left out stay as in English.
+es:
+  title: "Bufete502: recuperación de Google Workspace"
+  role: "Implementador"
+  short_description: "Recuperación de una configuración de Google Workspace y restablecimiento del dominio y los usuarios."
+  description: |-
+    <p>Revisé y corregí una configuración de Google Workspace que, tras intentos previos de configuración, había quedado inutilizable. El trabajo incluyó revalidar el dominio y crear las cuentas de usuario para que la organización pudiera usar su servicio de correo.</p>
 ---

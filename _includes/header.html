@@ -1,11 +1,17 @@
 <nav class="navbar navbar-expand-lg main-nav main-nav-black fixed-top" id="main-nav">  
-    <a class="navbar-brand" href="{{ '/' | relative_url }}">
+    <a class="navbar-brand" href="{{ lang_prefix | append: '/' | relative_url }}">
       <!--img src="{{site.logo | relative_url}}" alt="{{site.title}}" class="img-fluid w-logo" /-->
       <span class="text-color text-little-big">{{ site.brand | default: "@javiscript13" }}</span>
     </a>
 
+    {% comment %} Language switcher: always visible (next to the menu button on small screens, after the menu on large ones). {% endcomment %}
+    <div class="lang-switch ml-auto order-lg-3" role="group" aria-label="{{ t.language }}">
+      <a class="lang-switch-option{% if lang == 'en' %} is-active{% endif %}" href="{{ url_en | relative_url }}" data-lang="en" lang="en" hreflang="en" title="English"{% if lang == 'en' %} aria-current="true"{% endif %}>EN</a>
+      <a class="lang-switch-option{% if lang == 'es' %} is-active{% endif %}" href="{{ url_es | relative_url }}" data-lang="es" lang="es" hreflang="es" title="Español"{% if lang == 'es' %} aria-current="true"{% endif %}>ES</a>
+    </div>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars"
-      aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
+      aria-controls="navbars" aria-expanded="false" aria-label="{{ t.toggle_navigation }}">
       <span class="ti-menu navbar-toggler"></span>
     </button>
 

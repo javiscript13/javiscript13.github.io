@@ -1,0 +1,64 @@
+---
+layout: default
+---
+{% comment %} About page, used by about.html (English) and es/about.html (Spanish). Texts: _data/i18n.yml (`t`) and the `es:` block of each data record. {% endcomment %}
+{% include i18n.html %}
+{% include page_header.html %}
+
+<!-- 1. Opening text (no title) -->
+<section class="section-sm about-block">
+	<div class="container">
+		<div class="about-text">
+			{% for paragraph in t.about_intro %}<p class="about-intro-text">{{ paragraph }}</p>{% endfor %}
+		</div>
+	</div>
+</section>
+
+<!-- 2. How I work -->
+<section class="section-sm about-block about-band">
+	<div class="container">
+		<div class="about-text">
+			<h3>{{ t.how_i_work }}</h3>
+			{% for paragraph in t.how_i_work_text %}<p>{{ paragraph }}</p>{% endfor %}
+		</div>
+	</div>
+</section>
+
+<!-- 3. Technical background -->
+<section class="section-sm about-block about-skills">
+	<div class="container">
+		<h3>{{ t.technical_background }}</h3>
+		{% for group in site.data.skills %}
+		<div class="skill-row row">
+			<div class="col-md-3"><span class="skill-area">{{ group[lang].area | default: group.area | escape }}</span></div>
+			<div class="col-md-9"><p class="skill-items">{% assign group_items = group[lang].items | default: group.items %}{{ group_items | join: " &middot; " }}</p></div>
+		</div>
+		{% endfor %}
+	</div>
+</section>
+
+<!-- 4. Professional experience (data: _data/experiences.yml) -->
+{% assign public_experiences = site.data.experiences | where: "visibility", "public" %}
+{% if public_experiences.size > 0 %}
+<section class="section-sm about-block about-band about-entries">
+	<div class="container">
+		<h3>{{ t.professional_experience }}</h3>
+		{% for entry in public_experiences reversed %}
+			{% include about_entry.html entry=entry type="experience" %}
+		{% endfor %}
+	</div>
+</section>
+{% endif %}
+
+<!-- 5. Open source & volunteering (data: _data/collaborations.yml) -->
+{% assign public_collaborations = site.data.collaborations | where: "visibility", "public" %}
+{% if public_collaborations.size > 0 %}
+<section class="section-sm about-block about-entries">
+	<div class="container">
+		<h3>{{ t.open_source_volunteering }}</h3>
+		{% for entry in public_collaborations %}
+			{% include about_entry.html entry=entry type="collaboration" %}
+		{% endfor %}
+	</div>
+</section>
+{% endif %}

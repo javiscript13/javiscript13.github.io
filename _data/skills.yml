@@ -1,22 +1,41 @@
 # Technical background shown on About, grouped by area. Every item comes from the
 # technologies already listed on the site or documented in the experience/project records.
+# `es:` holds the Spanish `area` and, only when some item needs translating, the full `items` list.
 - area: "Web & software development"
   items: ["Python", "Django", "JavaScript", "Node.js", "Express.js", "React", "Vue.js", "PHP", "jQuery", "PixiJS"]
+  es:
+    area: "Desarrollo web y de software"
 
 - area: "Data & visualization"
   items: ["D3.js", "Scrapy", "Selenium", "Python scripts", "CSV data integration"]
+  es:
+    area: "Datos y visualización"
+    items: ["D3.js", "Scrapy", "Selenium", "Scripts de Python", "Integración de datos CSV"]
 
 - area: "Platforms & content systems"
   items: ["WordPress", "Joomla", "Moodle", "Chamilo", "Jekyll", "Alaveteli (Rails templating)", "Google Workspace"]
+  es:
+    area: "Plataformas y sistemas de contenido"
+    items: ["WordPress", "Joomla", "Moodle", "Chamilo", "Jekyll", "Alaveteli (plantillas de Rails)", "Google Workspace"]
 
 - area: "Infrastructure & operations"
   items: ["Linux server configuration", "Docker", "Docker Compose", "Nginx", "Apache", "GitLab"]
+  es:
+    area: "Infraestructura y operaciones"
+    items: ["Configuración de servidores Linux", "Docker", "Docker Compose", "Nginx", "Apache", "GitLab"]
 
 - area: "Databases"
   items: ["PostgreSQL", "MySQL", "MariaDB", "MongoDB"]
+  es:
+    area: "Bases de datos"
 
 - area: "IoT & embedded"
   items: ["ESP32", "C++ (Arduino)", "MQTT"]
+  es:
+    area: "IoT y sistemas embebidos"
 
 - area: "Business tools"
   items: ["Excel", "Access", "VBA", "SAP (as a data source)"]
+  es:
+    area: "Herramientas de negocio"
+    items: ["Excel", "Access", "VBA", "SAP (como fuente de datos)"]

@@ -160,6 +160,15 @@
     $('.search-wrapper').removeClass('open');
   });
 
+  // Language switcher: remember the choice (the script in <head> then keeps the visitor in that
+  // language) and stay on the same section of the page.
+  $('.lang-switch-option').on('click', function () {
+    try { localStorage.setItem('lang', this.getAttribute('data-lang')); } catch (e) {}
+    if (location.hash && this.getAttribute('href').indexOf('#') === -1) {
+      this.setAttribute('href', this.getAttribute('href') + location.hash);
+    }
+  });
+
   // Work page: filterable grid (Shuffle, as in the original site) controlled by the category buttons.
   var workGrid = document.querySelector('.work-grid');
   if (workGrid && window.Shuffle) {
@@ -192,9 +201,11 @@
       });
       var shown = matching.slice(0, limit);
       workShuffle.filter(function (el) { return shown.indexOf(el) !== -1; });
+      // The sentence comes from the page (data-* of .work-status), so it is in the page's language.
+      var template = shown.length < matching.length ? $status.data('some')
+        : (matching.length === 1 ? $status.data('one') : $status.data('all'));
       $status.find('.work-status-count').text(
-        'Showing ' + (shown.length < matching.length ? shown.length + ' of ' + matching.length : matching.length) +
-        ' project' + (matching.length === 1 ? '' : 's'));
+        String(template || '').replace('[shown]', shown.length).replace('[n]', matching.length));
       $more.prop('hidden', shown.length >= matching.length);
     };
 

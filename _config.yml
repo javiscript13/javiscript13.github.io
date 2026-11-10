@@ -38,6 +38,21 @@ sass:
 collections:
   portfolios:
     output: true
+  # Spanish project pages (/es/portfolios/<name>): one empty stub per project; the texts
+  # come from the `es:` block of the file with the same name in _portfolios/.
+  portfolios_es:
+    output: true
+    permalink: /es/portfolios/:path
+
+# Languages: English is the default (no URL prefix); Spanish lives under /es/.
+# UI texts are in _data/i18n.yml. A page is Spanish when its front matter says `lang: es`.
+defaults:
+  - scope:
+      path: ""
+      type: portfolios_es
+    values:
+      layout: portfolio
+      lang: es
 
 feed:
   collections:

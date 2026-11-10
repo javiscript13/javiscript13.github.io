@@ -21,4 +21,10 @@ repository: "https://github.com/Guatecambia/llevatuayuda"
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-05
+# Spanish version (page /es/portfolios/llevatuayuda). Fields left out stay as in English.
+es:
+  role: "Desarrollo web; OpenStreetMap"
+  short_description: "Plataforma para encontrar y registrar puntos de donación después de un desastre."
+  description: |-
+    <p>Llevatuayuda fue una plataforma pensada para ayudar a las personas a encontrar lugares donde donar insumos después de un desastre. Los usuarios podían registrar puntos de donación, que luego se agregaban a un mapa mediante un proceso semiautomatizado con OpenStreetMap.</p>
 ---

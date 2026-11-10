@@ -24,4 +24,14 @@ repository_note: "Templating and Docker file sources are not public."
 # former website (as of 2026-11-06 it answers 403 Forbidden): https://amidual.sonica.gt/
 parent_type: experience
 parent_id: EXP-06
+# Spanish version (page /es/portfolios/amidual). Fields left out stay as in English.
+es:
+  tags: ["Personalización e instalación", "Plataformas de aprendizaje"]
+  role: "Implementador"
+  short_description: "Personalización y despliegue de una plataforma de aprendizaje Chamilo para una iniciativa de formación en alfabetización mediática e informacional."
+  description: |-
+    <p>Amidual fue una iniciativa de aprendizaje en línea de Radio Sónica, desarrollada en colaboración con DW Akademie para periodistas y comunicadores de América Latina.</p>
+    <p>Personalicé y desplegué el sistema de gestión de aprendizaje Chamilo para apoyar las actividades de formación del proyecto y responder a sus necesidades operativas.</p>
+  availability_note: "La plataforma ya no está en uso."
+  repository_note: "Las fuentes de las plantillas y del archivo Docker no son públicas."
 ---

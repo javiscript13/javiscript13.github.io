@@ -26,4 +26,15 @@ availability: online   # online | offline | private | device
 repository_note: "The website code is not public."
 parent_type: experience
 parent_id: EXP-10
+# Spanish version (page /es/portfolios/funjose). Fields left out stay as in English.
+es:
+  tags: ["WordPress", "Implementación de sitio web", "Personalización"]
+  role: "Configuración, desarrollo"
+  short_description: "Sitio web institucional de una fundación guatemalteca que apoya el acceso a la educación superior mediante becas."
+  description: |-
+    <p>Implementé y personalicé el sitio web institucional de FUNJOSE, una fundación guatemalteca sin fines de lucro que apoya con becas a jóvenes que cursan educación superior.</p>
+    <p>El sitio reúne información sobre la misión de la fundación, las oportunidades de beca y las formas de participar. Incluye detalles del proceso de aplicación, requisitos y fechas, un directorio con buscador de becarios y secciones de donaciones y voluntariado.</p>
+    <p>Trabajé en la implementación en WordPress, la personalización técnica y la integración de herramientas que sostienen el contenido y la funcionalidad del sitio.</p>
+    <p><strong>Tecnologías:</strong> WordPress · Kadence · Forminator · Advanced Custom Fields · API de Google Drive y Sheets · Cloudflare · Docker</p>
+  repository_note: "El código del sitio no es público."
 ---

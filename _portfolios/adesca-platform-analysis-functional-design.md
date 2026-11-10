@@ -23,4 +23,13 @@ repository:
 availability: unknown   # online | offline | private | device | unknown (nothing known: the Online line is hidden)
 parent_type: experience
 parent_id: EXP-08
+# Spanish version (page /es/portfolios/adesca-platform-analysis-functional-design). Fields left out stay as in English.
+es:
+  title: "ADESCA: análisis de plataforma y diseño funcional"
+  role: "Análisis funcional; historias de usuario; casos de uso; diagrama entidad-relación"
+  short_description: "Análisis funcional y documentación para una plataforma propuesta de gestión de proyectos y sus procesos administrativos y financieros."
+  description: |-
+    <p>Trabajé en el análisis de los procesos de gestión de proyectos de ADESCA y de los flujos administrativos y financieros asociados a cada proyecto. El trabajo incluyó entrevistas con personal directivo y administrativo, así como mapeo colaborativo de procesos.</p>
+    <p>Elaboré la documentación funcional, que incluyó historias de usuario, casos de uso, un diagrama entidad-relación, módulos y roles de usuario propuestos, además de requerimientos de reportes y visualización. El análisis y la documentación se desarrollaron en colaboración con quien lideraba la consultoría, que revisó los entregables.</p>
+    <p>La plataforma propuesta aún no se ha implementado.</p>
 ---

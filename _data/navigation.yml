@@ -1,7 +1,8 @@
-# Main menu. `match` (optional) lists extra URL prefixes that also mark the item
-# as active. Work is a section of Home (/#work), not a menu item.
+# Main menu. `key` is the label in _data/i18n.yml (nav.<key>), `url` is the English URL
+# (the Spanish one is the same under /es). `match` (optional) lists extra URL prefixes that
+# also mark the item as active. Work is a section of Home (/#work), not a menu item.
 main:
-  - name: Home
+  - key: home
     url: /
-  - name: About
+  - key: about
     url: /about/

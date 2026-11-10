@@ -22,4 +22,13 @@ repository:
 availability: private   # online | offline | private | device
 parent_type: experience
 parent_id: EXP-01
+# Spanish version (page /es/portfolios/exxonmobil-retail-operations-issue-management). Fields left out stay as in English.
+es:
+  title: "ExxonMobil: gestión de incidentes de operaciones minoristas"
+  tags: ["Mejora de procesos", "Excel", "Datos de SAP"]
+  role: "Analista de logística; especialista en mejora de procesos"
+  short_description: "Organización de incidentes de configuración de artículos de tiendas minoristas en EE. UU. y su envío a los departamentos responsables de resolverlos."
+  description: |-
+    <p>Mientras trabajaba en Outsource Empresarial en un servicio para ExxonMobil, trabajé con información de tiendas minoristas en EE. UU., archivos de Excel y tablas de SAP descargadas desde Guatemala. Organicé y validé esa información, clasifiqué los incidentes relacionados con la configuración de artículos y los dirigí a los departamentos responsables de resolverlos.</p>
+    <p>No construí el registro de incidentes ni resolví los incidentes técnicamente: mi trabajo consistió en organizar la información, dar seguimiento a los incidentes y coordinar operativamente con los equipos responsables.</p>
 ---

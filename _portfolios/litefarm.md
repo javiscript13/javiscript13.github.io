@@ -24,4 +24,12 @@ repository: "https://github.com/LiteFarmOrg/LiteFarm"
 availability: online   # online | offline | private | device
 parent_type: collaboration
 parent_id: COL-01
+# Spanish version (page /es/portfolios/litefarm). Fields left out stay as in English.
+es:
+  tags: ["React", "Express.js", "Código abierto"]
+  role: "Implementador"
+  short_description: "Plataforma de gestión agrícola de código abierto para agricultores sostenibles, actuales y futuros."
+  description: |-
+    <p>LiteFarm es una plataforma de gestión agrícola gratuita y de código abierto, creada para agricultores sostenibles, actuales y futuros.</p>
+    <p>Contribuí al proyecto como desarrollador full-stack: trabajé en funcionalidades de backend y frontend, corregí errores y participé en las ceremonias Scrum del equipo.</p>
 ---
